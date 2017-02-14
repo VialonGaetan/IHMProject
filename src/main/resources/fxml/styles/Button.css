@@ -1,0 +1,13 @@
+.button {
+  -fx-display: inline-block;
+  -fx-background-image:url(../images/button.png) no-repeat;
+  -fx-border-radius: 10px;
+  -fx-border: none;
+  -fx-color: #FFFFFF;
+  -fx-text-align: center;
+  -fx-font-size: 28px;
+  -fx-padding: 20px;
+  -fx-width: 200px;
+  -fx-cursor: pointer;
+}
+

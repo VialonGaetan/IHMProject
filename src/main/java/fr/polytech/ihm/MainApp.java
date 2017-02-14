@@ -19,16 +19,15 @@ public class MainApp extends Application {
     public void start(Stage stage) throws Exception {
 
         log.info("Starting Hello JavaFX and Maven demonstration application");
-        
 
-        String fxmlFile = "/fxml/hello.fxml";
+
+        String fxmlFile = "/fxml/MainPage.fxml";
         log.debug("Loading FXML for main view from: {}", fxmlFile);
         FXMLLoader loader = new FXMLLoader();
         Parent rootNode = (Parent) loader.load(getClass().getResourceAsStream(fxmlFile));
 
         log.debug("Showing JFX scene");
-        Scene scene = new Scene(rootNode, 400, 200);
-        scene.getStylesheets().add("/styles/styles.css");
+        Scene scene = new Scene(rootNode, 1366, 716);
 
         stage.setTitle("Hello JavaFX and Maven");
         stage.setScene(scene);
