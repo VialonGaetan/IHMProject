@@ -57,7 +57,7 @@
 			   <graphic>
       <ImageView fitHeight="82.0" fitWidth="62.0" preserveRatio="true" smooth="true">
         <image>
-          <Image url="@../images/sales.png" />
+          <Image url="@../images/icones/sales.png" />
         </image>
       </ImageView>
    </graphic>
@@ -72,7 +72,7 @@
 			   <graphic>
       <ImageView fitHeight="109.0" fitWidth="64.0" preserveRatio="true" smooth="true">
         <image>
-          <Image url="@../images/description.png" />
+          <Image url="@../images/icones/description.png" />
         </image>
       </ImageView>
 	  </graphic>
@@ -92,7 +92,7 @@
 			   <graphic>
       <ImageView fitHeight="69.0" fitWidth="68.0" preserveRatio="true" smooth="true">
         <image>
-          <Image url="@../images/position.png" />
+          <Image url="@../images/icones/position.png" />
         </image>
       </ImageView>
 	  </graphic>
@@ -155,7 +155,7 @@
                      <graphic>
                         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../images/ProduitsPhares/PF1.jpg" />
+                              <Image url="@../images/ProduitsPhares/PF1.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
