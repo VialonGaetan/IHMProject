@@ -10,7 +10,7 @@
         </layout>
     </appender>
 
-    <logger name="fr.polytech.ihm">
+    <logger name="fr.polytech.ihm.group.a3">
         <level value="DEBUG"/>
     </logger>
 
