@@ -20,7 +20,7 @@
          <children>
             <ImageView fitHeight="190.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@resources/images/logo.png" />
+                  <Image url="@../images/logo.png" />
                </image>
                <VBox.margin>
                   <Insets bottom="120.0" left="20.0" top="20.0" />
@@ -42,7 +42,7 @@
                <graphic>
                   <ImageView fitHeight="79.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@resources/images/home.PNG" />
+                        <Image url="@../images/home.PNG" />
                      </image>
                   </ImageView>
                </graphic>
@@ -57,7 +57,7 @@
 			   <graphic>
       <ImageView fitHeight="82.0" fitWidth="62.0" preserveRatio="true" smooth="true">
         <image>
-          <Image url="@resources/images/sales.png" />
+          <Image url="@../images/sales.png" />
         </image>
       </ImageView>
    </graphic>
@@ -72,7 +72,7 @@
 			   <graphic>
       <ImageView fitHeight="109.0" fitWidth="64.0" preserveRatio="true" smooth="true">
         <image>
-          <Image url="@resources/images/description.png" />
+          <Image url="@../images/description.png" />
         </image>
       </ImageView>
 	  </graphic>
@@ -92,7 +92,7 @@
 			   <graphic>
       <ImageView fitHeight="69.0" fitWidth="68.0" preserveRatio="true" smooth="true">
         <image>
-          <Image url="@resources/images/position.png" />
+          <Image url="@../images/position.png" />
         </image>
       </ImageView>
 	  </graphic>
@@ -128,7 +128,7 @@
                      <graphic>
                         <ImageView fitHeight="134.0" fitWidth="262.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@resources/images/ProduitsPhares/PF1.jpg" />
+                              <Image url="@../images/ProduitsPhares/PF1.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -137,7 +137,7 @@
                      <graphic>
                         <ImageView fitHeight="200.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@resources/images/ProduitsPhares/PF2.jpg" />
+                              <Image url="@../images/ProduitsPhares/PF2.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -146,7 +146,7 @@
                      <graphic>
                         <ImageView fitHeight="268.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@resources/images/ProduitsPhares/PF3.jpg" />
+                              <Image url="@../images/ProduitsPhares/PF3.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -155,7 +155,7 @@
                      <graphic>
                         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../resources/images/ProduitsPhares/PF1.jpg" />
+                              <Image url="@../../images/ProduitsPhares/PF1.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -164,7 +164,7 @@
                      <graphic>
                         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@resources/images/ProduitsPhares/PF5.jpg" />
+                              <Image url="@../images/ProduitsPhares/PF5.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -173,7 +173,7 @@
                      <graphic>
                         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@resources/images/ProduitsPhares/PF6.jpg" />
+                              <Image url="@../images/ProduitsPhares/PF6.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -182,7 +182,7 @@
                      <graphic>
                         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@resources/images/ProduitsPhares/PF7.jpg" />
+                              <Image url="@../images/ProduitsPhares/PF7.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -191,7 +191,7 @@
                      <graphic>
                         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@resources/images/ProduitsPhares/PF8.jpg" />
+                              <Image url="@../images/ProduitsPhares/PF8.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -200,7 +200,7 @@
                      <graphic>
                         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@resources/images/ProduitsPhares/PF9.jpg" />
+                              <Image url="@../images/ProduitsPhares/PF9.jpg" />
                            </image>
                         </ImageView>
                      </graphic>

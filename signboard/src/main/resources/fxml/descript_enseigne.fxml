@@ -21,7 +21,7 @@
          <children>
             <ImageView fitHeight="190.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@resources/images/logo.png" />
+                  <Image url="@../images/logo.png" />
                </image>
                <VBox.margin>
                   <Insets bottom="120.0" left="20.0" top="20.0" />
@@ -43,7 +43,7 @@
                <graphic>
                   <ImageView fitHeight="79.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@resources/images/home.PNG" />
+                        <Image url="@../images/home.PNG" />
                      </image>
                   </ImageView>
                </graphic>
@@ -58,7 +58,7 @@
 			   <graphic>
       <ImageView fitHeight="82.0" fitWidth="62.0" preserveRatio="true" smooth="true">
         <image>
-          <Image url="@resources/images/sales.png" />
+          <Image url="@../images/sales.png" />
         </image>
       </ImageView>
    </graphic>
@@ -81,7 +81,7 @@
                <graphic>
                   <ImageView fitHeight="96.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@resources/images/gallery.PNG" />
+                        <Image url="@../images/gallery.PNG" />
                      </image>
                   </ImageView>
                </graphic>
@@ -93,7 +93,7 @@
 			   <graphic>
       <ImageView fitHeight="69.0" fitWidth="68.0" preserveRatio="true" smooth="true">
         <image>
-          <Image url="@resources/images/position.png" />
+          <Image url="@../images/position.png" />
         </image>
       </ImageView>
 	  </graphic>
@@ -127,12 +127,12 @@
                <children>
                   <ImageView fitHeight="320.0" fitWidth="500.0" layoutX="132.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@resources/images/magasin.jpg" />
+                        <Image url="@../images/magasin.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="343.0" fitWidth="706.0" layoutX="624.0" layoutY="581.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@resources/images/magasin2.jpg" />
+                        <Image url="@../images/magasin2.jpg" />
                      </image>
                   </ImageView>
                   <ScrollBar layoutX="1467.0" layoutY="68.0" orientation="VERTICAL" prefHeight="970.0" prefWidth="18.0" />

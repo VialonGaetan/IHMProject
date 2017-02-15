@@ -20,7 +20,7 @@
          <children>
             <ImageView fitHeight="190.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../resources/images/logo.png" />
+                  <Image url="@../images/logo.png" />
                </image>
                <VBox.margin>
                   <Insets bottom="120.0" left="20.0" top="20.0" />
@@ -42,7 +42,7 @@
                <graphic>
                   <ImageView fitHeight="82.0" fitWidth="68.0" preserveRatio="true" smooth="true">
                      <image>
-                        <Image url="@../resources/images/home.PNG" />
+                        <Image url="@../images/home.PNG" />
                      </image>
                   </ImageView>
                </graphic>
@@ -57,7 +57,7 @@
                <graphic>
                   <ImageView fitHeight="82.0" fitWidth="62.0" preserveRatio="true" smooth="true">
                      <image>
-                        <Image url="@../resources/images/sales.PNG" />
+                        <Image url="@../images/sales.PNG" />
                      </image>
                   </ImageView>
                </graphic>
@@ -72,7 +72,7 @@
                <graphic>
                   <ImageView fitHeight="109.0" fitWidth="64.0" preserveRatio="true" smooth="true">
                      <image>
-                        <Image url="@../resources/images/description.PNG" />
+                        <Image url="@../images/description.PNG" />
                      </image>
                   </ImageView>
                </graphic>
@@ -87,7 +87,7 @@
                <graphic>
                   <ImageView fitHeight="69.0" fitWidth="68.0" preserveRatio="true" smooth="true">
                      <image>
-                        <Image url="@../resources/images/position.PNG" />
+                        <Image url="@../images/position.PNG" />
                      </image>
                   </ImageView>
                </graphic>
@@ -123,7 +123,7 @@
          <center>
             <ImageView fitHeight="686.0" fitWidth="1376.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
                <image>
-                  <Image url="@../resources/images/map.png" />
+                  <Image url="@../images/map.png" />
                </image>
             </ImageView>
          </center>
