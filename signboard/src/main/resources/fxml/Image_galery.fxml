@@ -14,7 +14,7 @@
       <Button layoutX="1710.0" layoutY="1.0" mnemonicParsing="false" text="Close X" />
       <ImageView fitHeight="578.0" fitWidth="774.0" layoutX="677.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/ProduitsPhares/PF1.jpg" />
+            <Image url="@../images/produitsPhares/PF1.jpg" />
          </image>
       </ImageView>
    </children>

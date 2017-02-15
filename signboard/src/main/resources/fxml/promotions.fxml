@@ -22,7 +22,7 @@
             <children>
                 <ImageView fitHeight="190.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../images/logo.png" />
+                        <Image url="@../images/icones/logo.png" />
                     </image>
                     <VBox.margin>
                         <Insets bottom="120.0" left="20.0" top="20.0" />
@@ -44,7 +44,7 @@
                     <graphic>
                         <ImageView fitHeight="109.0" fitWidth="64.0" preserveRatio="true" smooth="true">
                             <image>
-                                <Image url="@../images/home.PNG" />
+                                <Image url="@../images/icones/home.PNG" />
                             </image>
                         </ImageView>
                     </graphic>
@@ -67,7 +67,7 @@
                     <graphic>
                         <ImageView fitHeight="109.0" fitWidth="64.0" preserveRatio="true" smooth="true">
                             <image>
-                                <Image url="@../images/description.PNG" />
+                                <Image url="@../images/icones/description.PNG" />
                             </image>
                         </ImageView>
                     </graphic>
@@ -82,7 +82,7 @@
                     <graphic>
                         <ImageView fitHeight="69.0" fitWidth="68.0" preserveRatio="true" smooth="true">
                             <image>
-                                <Image url="@../images/gallery.PNG" />
+                                <Image url="@../images/icones/gallery.PNG" />
                             </image>
                         </ImageView>
                     </graphic>
@@ -94,7 +94,7 @@
                     <graphic>
                         <ImageView fitHeight="69.0" fitWidth="68.0" preserveRatio="true" smooth="true">
                             <image>
-                                <Image url="@../images/position.PNG" />
+                                <Image url="@../images/icones/position.PNG" />
                             </image>
                         </ImageView>
                     </graphic>
@@ -113,14 +113,14 @@
                         <children>
                             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@../images/livre.jpg" />
+                           <Image url="@../images/articles/livre.jpg" />
                         </image>
                         <HBox.margin>
                            <Insets left="50.0" />
                         </HBox.margin></ImageView>
                      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@../images/80.png" />
+                           <Image url="@../images/promotion/80.png" />
                         </image>
                      </ImageView>
                             <Label text="Marc LEVY">
@@ -141,7 +141,7 @@
                      <AnchorPane prefHeight="232.0" prefWidth="442.0" />
                      <ImageView fitHeight="56.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@../images/prix_livre.PNG" />
+                           <Image url="@../images/articles/prix_livre.PNG" />
                         </image>
                      </ImageView>
                         </children>
@@ -153,14 +153,14 @@
                         <children>
                             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                 <image>
-                                    <Image url="@../images/mac.jpg" />
+                                    <Image url="@../images/articles/mac.jpg" />
                                 </image>
                                 <HBox.margin>
                                     <Insets left="50.0" />
                                 </HBox.margin></ImageView>
                      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@../images/30.png" />
+                           <Image url="@../images/promotion/30.png" />
                         </image>
                      </ImageView>
                      <Label text="Apple iMac">
@@ -182,7 +182,7 @@
                      <AnchorPane prefHeight="220.0" prefWidth="168.0" />
                      <ImageView fitHeight="89.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@../images/prix_mac.PNG" />
+                           <Image url="@../images/articles/prix_mac.PNG" />
                         </image>
                      </ImageView>
                         </children>
@@ -191,14 +191,14 @@
                         <children>
                             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                 <image>
-                                    <Image url="@../images/casque.jpg" />
+                                    <Image url="@../images/articles/casque.jpg" />
                                 </image>
                                 <HBox.margin>
                                     <Insets left="50.0" />
                                 </HBox.margin></ImageView>
                      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@../images/60.png" />
+                           <Image url="@../images/promotion/60.png" />
                         </image>
                      </ImageView>
                      <Label text="Casque bluetooth">
@@ -220,7 +220,7 @@
                      <AnchorPane prefHeight="220.0" prefWidth="488.0" />
                      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@../images/prix_casque.PNG" />
+                           <Image url="@../images/articles/prix_casque.PNG" />
                         </image>
                      </ImageView>
                         </children>
