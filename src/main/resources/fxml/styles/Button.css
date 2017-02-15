@@ -1,13 +1,13 @@
 .button {
   -fx-display: inline-block;
-  -fx-background-image:url(../images/button.png) no-repeat;
+  -fx-background-image:url(../images/button2b.png);
+  -fx-background-color:#6B6B6B;
   -fx-border-radius: 10px;
   -fx-border: none;
-  -fx-color: #FFFFFF;
+  -fx-color: #6B6B6B;
   -fx-text-align: center;
-  -fx-font-size: 28px;
+  -fx-font-size: 20px;
   -fx-padding: 20px;
-  -fx-width: 200px;
   -fx-cursor: pointer;
 }
 

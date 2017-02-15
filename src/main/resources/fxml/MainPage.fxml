@@ -8,7 +8,8 @@
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
@@ -18,7 +19,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1366.0" style="-fx-background-color: #6B6B6B;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <ImageView fitHeight="498.0" fitWidth="1062.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_CENTER">
+      <ImageView fitHeight="446.0" fitWidth="1039.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_CENTER">
          <image>
             <Image url="@images/CentreCommercial.jpg" />
          </image>
@@ -50,21 +51,25 @@
               <items>
                 <MenuItem mnemonicParsing="false">
                      <graphic>
-                        <Button mnemonicParsing="false" stylesheets="@styles/Button.css" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Accueil" />
                      </graphic></MenuItem>
                   <MenuItem mnemonicParsing="false">
                      <graphic>
-                        <Button mnemonicParsing="false" stylesheets="@styles/Button.css" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Nos magasins" />
                      </graphic></MenuItem>
                   <MenuItem mnemonicParsing="false">
                      <graphic>
-                        <Button mnemonicParsing="false" stylesheets="@styles/Button.css" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Renseignements" />
                      </graphic></MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem mnemonicParsing="false">
                      <graphic>
-                        <Button mnemonicParsing="false" stylesheets="@styles/Button.css" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Événements" />
                      </graphic></MenuItem>
               </items>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
             </MenuButton>
          </children>
       </VBox>
@@ -96,8 +101,8 @@
          <children>
             <HBox prefHeight="20.0" prefWidth="117.0">
                <children>
-                  <TextArea prefHeight="13.0" prefWidth="176.0" />
-                  <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="35.0" text="Button" />
+                  <TextField />
+                  <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="Button" />
                </children>
                <opaqueInsets>
                   <Insets />
@@ -106,7 +111,7 @@
                   <Insets top="10.0" />
                </VBox.margin>
             </HBox>
-            <ImageView fitHeight="448.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="464.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/bannerRight.png" />
                </image>
