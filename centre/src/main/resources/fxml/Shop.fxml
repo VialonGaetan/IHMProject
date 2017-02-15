@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1366.0" style="-fx-background-color: #6B6B6B;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox prefHeight="146.0" prefWidth="1366.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="138.0" fitWidth="1362.0" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <image>
+                  <Image url="@images/banner3.png" />
+               </image>
+            </ImageView>
+            <Separator opacity="0.65" prefHeight="9.0" prefWidth="1368.0" style="-fx-background-color: black;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Separator>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuButton alignment="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="75.0" prefWidth="75.0" stylesheets="@styles/MenuBar.css">
+               <items>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Accueil" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Nos magasins" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Renseignements" />
+                     </graphic>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Événements" />
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </MenuButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="582.0" prefWidth="1286.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <Separator opacity="0.65" prefHeight="9.0" prefWidth="1368.0" style="-fx-background-color: black;">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Separator>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <Separator opacity="0.65" prefHeight="9.0" prefWidth="1368.0" style="-fx-background-color: black;">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Separator>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <Separator opacity="0.65" prefHeight="9.0" prefWidth="1368.0" style="-fx-background-color: black;">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Separator>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
