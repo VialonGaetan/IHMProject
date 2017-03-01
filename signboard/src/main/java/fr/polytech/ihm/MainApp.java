@@ -26,7 +26,7 @@ public class MainApp extends Application {
         Parent rootNode = (Parent) loader.load(getClass().getResourceAsStream(fxmlFile));
 
         log.debug("Showing JFX scene");
-        Scene scene = new Scene(rootNode, 1366, 768);
+        Scene scene = new Scene(rootNode, 1366, 716);
         scene.getStylesheets().add("/styles/styles.css");
 
         stage.setTitle("To Be or to Have");
