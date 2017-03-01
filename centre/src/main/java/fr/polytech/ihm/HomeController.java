@@ -8,6 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -57,24 +58,16 @@ public class HomeController {
     private Button searchButton;
 
     @FXML
-    private void handleButtonClick(ActionEvent event) {
-        if (event.getSource() == AccueilButton){
-
-        }
+    private void handleButtonClick(ActionEvent event) throws IOException {
         if (event.getSource() == ShopButton) {
             String fxmlFile = "/fxml/Shop.fxml";
             FXMLLoader loader = new FXMLLoader();
-            try {
-                Stage stage=(Stage) ShopButton.getScene().getWindow();
-                Parent rootNode = (Parent) loader.load(getClass().getResourceAsStream(fxmlFile));
-
-                Scene scene = new Scene(rootNode);
-                stage.setScene(scene);
-                stage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
+            Stage stage= (Stage) searchButton.getScene().getWindow();
+            Parent rootNode = loader.load(getClass().getResource(fxmlFile));
+            Scene scene = new Scene(rootNode);
+            stage.setScene(scene);
+            stage.show();
             }
-        }
         if (event.getSource() == InfosButton) {
             System.out.println("Salut");
         }
