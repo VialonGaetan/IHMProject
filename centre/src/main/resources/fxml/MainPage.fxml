@@ -50,19 +50,19 @@
               <items>
                 <MenuItem mnemonicParsing="false">
                      <graphic>
-                        <Button fx:id="AccueilButton" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Accueil" />
+                        <Button fx:id="AccueilButton" onAction="#handleButtonClick" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Accueil" />
                      </graphic></MenuItem>
                   <MenuItem mnemonicParsing="false">
                      <graphic>
-                        <Button fx:id="ShopButton" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Nos magasins" />
+                        <Button fx:id="ShopButton" onAction="#handleButtonClick" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Nos magasins" />
                      </graphic></MenuItem>
                   <MenuItem mnemonicParsing="false">
                      <graphic>
-                        <Button fx:id="InfosButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Renseignements" />
+                        <Button fx:id="InfosButton" onAction="#handleButtonClick" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Renseignements" />
                      </graphic></MenuItem>
                   <MenuItem mnemonicParsing="false">
                      <graphic>
-                        <Button fx:id="EventButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Événements" />
+                        <Button fx:id="EventButton" onAction="#handleButtonClick" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Événements" />
                      </graphic></MenuItem>
               </items>
                <VBox.margin>
