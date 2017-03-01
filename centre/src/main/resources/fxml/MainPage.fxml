@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1366.0" style="-fx-background-color: #6B6B6B;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1366.0" style="-fx-background-color: #6B6B6B;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.HomeController">
    <center>
       <ImageView fitHeight="446.0" fitWidth="1039.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_CENTER">
          <image>
@@ -50,19 +50,19 @@
               <items>
                 <MenuItem mnemonicParsing="false">
                      <graphic>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Accueil" />
+                        <Button fx:id="AccueilButton" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Accueil" />
                      </graphic></MenuItem>
                   <MenuItem mnemonicParsing="false">
                      <graphic>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Nos magasins" />
+                        <Button fx:id="ShopButton" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Nos magasins" />
                      </graphic></MenuItem>
                   <MenuItem mnemonicParsing="false">
                      <graphic>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Renseignements" />
+                        <Button fx:id="InfosButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Renseignements" />
                      </graphic></MenuItem>
                   <MenuItem mnemonicParsing="false">
                      <graphic>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Événements" />
+                        <Button fx:id="EventButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Événements" />
                      </graphic></MenuItem>
               </items>
                <VBox.margin>
@@ -99,8 +99,8 @@
          <children>
             <HBox prefHeight="20.0" prefWidth="117.0">
                <children>
-                  <TextField />
-                  <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="Button" />
+                  <TextField fx:id="searchText" />
+                  <Button fx:id="searchButton" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="Button" />
                </children>
                <opaqueInsets>
                   <Insets />
