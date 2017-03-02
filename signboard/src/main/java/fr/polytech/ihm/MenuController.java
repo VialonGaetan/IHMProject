@@ -61,13 +61,45 @@ public class MenuController {
     }
 
     @FXML
-    public void map() {
-        System.out.println("clic map");
+    public void map(Event event) throws IOException {
+        String fxmlFileMenu = "/fxml/menu.fxml";
+        String fxmlFileContact = "/fxml/contact.fxml";
+
+        Node node=(Node) event.getSource();
+        Stage stage=(Stage) node.getScene().getWindow();
+
+        BorderPane root = new BorderPane();
+        FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileContact));
+        root.setCenter((Node) homeLoader.load());
+
+        FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
+        root.setLeft((Node) menuLoader.load());
+
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("/styles/styles.css");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    public void description() {
-        System.out.println("clic description");
+    public void description(Event event) throws IOException {
+        String fxmlFileMenu = "/fxml/menu.fxml";
+        String fxmlFileDescr = "/fxml/descript_enseigne.fxml";
+
+        Node node=(Node) event.getSource();
+        Stage stage=(Stage) node.getScene().getWindow();
+
+        BorderPane root = new BorderPane();
+        FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileDescr));
+        root.setCenter((Node) homeLoader.load());
+
+        FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
+        root.setLeft((Node) menuLoader.load());
+
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("/styles/styles.css");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML

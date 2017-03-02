@@ -14,9 +14,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="stage" maxHeight="716.0" maxWidth="1166.0" minHeight="716.0" minWidth="1166.0" prefHeight="716.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="stage" maxHeight="716.0" maxWidth="1166.0" BorderPane.alignment="TOP_RIGHT" minHeight="716.0" minWidth="1166.0" prefHeight="716.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
     <center>
-        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="TOP_RIGHT">
+        <BorderPane prefHeight="200.0" prefWidth="200.0" >
             <center>
                 <ListView prefHeight="794.0" prefWidth="1488.0" BorderPane.alignment="CENTER">
                     <HBox alignment="CENTER_LEFT" prefHeight="232.0" prefWidth="1404.0" BorderPane.alignment="CENTER">
