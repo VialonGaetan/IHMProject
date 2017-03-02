@@ -13,7 +13,6 @@ public class HomeView extends Application {
 
     private static final Logger log = LoggerFactory.getLogger(HomeView.class);
 
-
     public static void main(String[] args) throws Exception {
         launch(args);
     }

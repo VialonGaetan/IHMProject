@@ -4,12 +4,10 @@ import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class MenuController {
@@ -36,6 +34,7 @@ public class MenuController {
         root.setLeft((Node) menuLoader.load());
 
         Scene scene = new Scene(root);
+        scene.getStylesheets().add("/styles/styles.css");
         stage.setScene(scene);
         stage.show();
     }
@@ -56,6 +55,7 @@ public class MenuController {
         root.setLeft((Node) menuLoader.load());
 
         Scene scene = new Scene(root);
+        scene.getStylesheets().add("/styles/styles.css");
         stage.setScene(scene);
         stage.show();
     }
@@ -77,7 +77,6 @@ public class MenuController {
 
     @FXML
     public void exit() {
-        System.out.println("clic exit");
         menuBar.getScene().getWindow().hide();
     }
 
