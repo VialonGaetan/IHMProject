@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="TOP_RIGHT" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="stage" maxHeight="716.0" maxWidth="1366.0" minHeight="716.0" minWidth="1366.0" prefHeight="716.0" prefWidth="1366.0" BorderPane.alignment="TOP_RIGHT" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <ImageView fitHeight="450.0" fitWidth="675.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>

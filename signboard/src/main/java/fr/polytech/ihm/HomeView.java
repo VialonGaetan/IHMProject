@@ -24,9 +24,6 @@ public class HomeView extends Application {
         String fxmlFileHome = "/fxml/home.fxml";
         String fxmlFileMenu = "/fxml/menu.fxml";
 
-        log.debug("Loading FXML for main view from: {}", fxmlFileHome);
-        log.debug("Loading FXML for main view from: {}", fxmlFileMenu);
-
         BorderPane root = new BorderPane();
         FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileHome));
         root.setCenter((Node) homeLoader.load());

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -16,95 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
-    <left>
-        <VBox prefHeight="1080.0" prefWidth="260.0">
-            <children>
-                <ImageView fitHeight="190.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@images/icones/logo.png" />
-                    </image>
-                    <VBox.margin>
-                        <Insets bottom="120.0" left="20.0" top="20.0" />
-                    </VBox.margin>
-                </ImageView>
-                <Button mnemonicParsing="false" prefHeight="82.0" prefWidth="48.0" text="">
-                    <VBox.margin>
-                        <Insets bottom="30.0" />
-                    </VBox.margin>
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                    <effect>
-                        <Blend />
-                    </effect>
-                    <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                    </cursor>
-                    <graphic>
-                        <ImageView fitHeight="109.0" fitWidth="64.0" preserveRatio="true" smooth="true">
-                            <image>
-                                <Image url="@images/icones/home.PNG" />
-                            </image>
-                        </ImageView>
-                    </graphic>
-                </Button>
-                <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="216.0" text="Promotions" textAlignment="CENTER">
-                    <VBox.margin>
-                        <Insets bottom="30.0" />
-                    </VBox.margin>
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                </Button>
-                <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="36.0" text="" textAlignment="CENTER">
-                    <VBox.margin>
-                        <Insets bottom="30.0" />
-                    </VBox.margin>
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                    <graphic>
-                        <ImageView fitHeight="109.0" fitWidth="64.0" preserveRatio="true" smooth="true">
-                            <image>
-                                <Image url="@images/icones/description.PNG" />
-                            </image>
-                        </ImageView>
-                    </graphic>
-                </Button>
-                <Button mnemonicParsing="false" prefHeight="79.0" prefWidth="68.0" text="" textAlignment="CENTER">
-                    <VBox.margin>
-                        <Insets bottom="30.0" />
-                    </VBox.margin>
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                    <graphic>
-                        <ImageView fitHeight="69.0" fitWidth="68.0" preserveRatio="true" smooth="true">
-                            <image>
-                                <Image url="@images/icones/gallery.PNG" />
-                            </image>
-                        </ImageView>
-                    </graphic>
-                </Button>
-                <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="86.0" text="" textAlignment="CENTER">
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                    <graphic>
-                        <ImageView fitHeight="69.0" fitWidth="68.0" preserveRatio="true" smooth="true">
-                            <image>
-                                <Image url="@images/icones/position.PNG" />
-                            </image>
-                        </ImageView>
-                    </graphic>
-                </Button>
-            </children>
-        </VBox>
-    </left>
-    <effect>
-        <Blend />
-    </effect>
+<BorderPane fx:id="stage" maxHeight="716.0" maxWidth="1366.0" minHeight="716.0" minWidth="1366.0" prefHeight="716.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
     <center>
         <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="TOP_RIGHT">
             <center>
@@ -113,14 +23,14 @@
                         <children>
                             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@images/articles/livre.jpg" />
+                           <Image url="images/articles/livre.jpg" />
                         </image>
                         <HBox.margin>
                            <Insets left="50.0" />
                         </HBox.margin></ImageView>
                      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@images/promotion/80.png" />
+                           <Image url="images/promotion/80.png" />
                         </image>
                      </ImageView>
                             <Label text="Marc LEVY">
@@ -141,7 +51,7 @@
                      <AnchorPane prefHeight="232.0" prefWidth="442.0" />
                      <ImageView fitHeight="56.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@images/articles/prix_livre.PNG" />
+                           <Image url="images/articles/prix_livre.PNG" />
                         </image>
                      </ImageView>
                         </children>
@@ -153,14 +63,14 @@
                         <children>
                             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                 <image>
-                                    <Image url="@images/articles/mac.jpg" />
+                                    <Image url="images/articles/mac.jpg" />
                                 </image>
                                 <HBox.margin>
                                     <Insets left="50.0" />
                                 </HBox.margin></ImageView>
                      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@images/promotion/30.png" />
+                           <Image url="images/promotion/30.png" />
                         </image>
                      </ImageView>
                      <Label text="Apple iMac">
@@ -182,7 +92,7 @@
                      <AnchorPane prefHeight="220.0" prefWidth="168.0" />
                      <ImageView fitHeight="89.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@images/articles/prix_mac.PNG" />
+                           <Image url="images/articles/prix_mac.PNG" />
                         </image>
                      </ImageView>
                         </children>
@@ -191,14 +101,14 @@
                         <children>
                             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                 <image>
-                                    <Image url="@images/articles/casque.jpg" />
+                                    <Image url="images/articles/casque.jpg" />
                                 </image>
                                 <HBox.margin>
                                     <Insets left="50.0" />
                                 </HBox.margin></ImageView>
                      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@images/promotion/60.png" />
+                           <Image url="images/promotion/60.png" />
                         </image>
                      </ImageView>
                      <Label text="Casque bluetooth">
@@ -220,7 +130,7 @@
                      <AnchorPane prefHeight="220.0" prefWidth="488.0" />
                      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@images/articles/prix_casque.PNG" />
+                           <Image url="images/articles/prix_casque.PNG" />
                         </image>
                      </ImageView>
                         </children>

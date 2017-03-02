@@ -9,7 +9,7 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane prefHeight="200.0" prefWidth="200.0" fx:controller="fr.polytech.ihm.HomeController" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="200.0" prefWidth="200.0" fx:controller="fr.polytech.ihm.MenuController" xmlns:fx="http://javafx.com/fxml/1">
     <center>
         <VBox fx:id="menuBar" prefHeight="1080.0" prefWidth="150.0">
             <children>
