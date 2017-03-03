@@ -32,6 +32,7 @@ public class HomeView extends Application {
 
         Scene scene = new Scene(root, 1366, 716);
         scene.getStylesheets().add("/styles/styles.css");
+        scene.getStylesheets().add("/styles/styleButtonHome.css");
         primaryStage.setTitle("To Be or to Have");
         primaryStage.setScene(scene);
         primaryStage.show();

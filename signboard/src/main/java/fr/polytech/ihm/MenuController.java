@@ -35,6 +35,7 @@ public class MenuController {
 
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/styles.css");
+        scene.getStylesheets().add("/styles/styleButtonHome.css");
         stage.setScene(scene);
         stage.show();
     }
@@ -56,6 +57,7 @@ public class MenuController {
 
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/styles.css");
+        scene.getStylesheets().add("/styles/styleButtonSales.css");
         stage.setScene(scene);
         stage.show();
     }
@@ -77,6 +79,7 @@ public class MenuController {
 
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/styles.css");
+        scene.getStylesheets().add("/styles/styleButtonContact.css");
         stage.setScene(scene);
         stage.show();
     }
@@ -98,6 +101,7 @@ public class MenuController {
 
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/styles.css");
+        scene.getStylesheets().add("/styles/styleButtonDescri.css");
         stage.setScene(scene);
         stage.show();
     }
@@ -111,6 +115,5 @@ public class MenuController {
     public void exit() {
         menuBar.getScene().getWindow().hide();
     }
-
 
 }
