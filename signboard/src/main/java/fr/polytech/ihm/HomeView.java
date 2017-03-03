@@ -1,9 +1,12 @@
 package fr.polytech.ihm;
 
+import de.codecentric.centerdevice.javafxsvg.SvgImageLoaderFactory;
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
@@ -13,12 +16,17 @@ public class HomeView extends Application {
 
     private static final Logger log = LoggerFactory.getLogger(HomeView.class);
 
+    @FXML
+    private Image img;
+
     public static void main(String[] args) throws Exception {
         launch(args);
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+
+        SvgImageLoaderFactory.install();
 
         String fxmlFileHome = "/fxml/home.fxml";
         String fxmlFileMenu = "/fxml/menu.fxml";

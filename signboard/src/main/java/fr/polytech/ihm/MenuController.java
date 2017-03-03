@@ -16,10 +16,8 @@ public class MenuController {
     private VBox menuBar ;
 
     @FXML
-    private BorderPane stage;
-
-    @FXML
     public void home(Event event) throws IOException {
+
         String fxmlFileMenu = "/fxml/menu.fxml";
         String fxmlFileHome = "/fxml/home.fxml";
 
