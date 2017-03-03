@@ -1,31 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxWidth="1166.0" minHeight="716.0" minWidth="1166.0" prefHeight="716.0" prefWidth="1166.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
-   <right>
-      <VBox alignment="TOP_RIGHT" prefHeight="560.0" prefWidth="132.0" BorderPane.alignment="CENTER">
-         <children>
-            <MenuButton mnemonicParsing="false" text="Langue">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Action 1" />
-                  <MenuItem mnemonicParsing="false" text="Action 2" />
-               </items>
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </MenuButton>
-         </children>
-      </VBox>
-   </right>
    <center>
       <ImageView fitHeight="454.0" fitWidth="1033.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>

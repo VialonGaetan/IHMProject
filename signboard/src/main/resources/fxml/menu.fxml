@@ -17,7 +17,7 @@
                         <Image fx:id="img" url="images/icones/logo.svg" />
                     </image>
                     <VBox.margin>
-                        <Insets bottom="30.0" left="10.0" top="10.0" />
+                        <Insets bottom="30.0" left="10.0" top="0.0" />
                     </VBox.margin>
                 </ImageView>
                 <Button id="buttonHome" minHeight="55.0" minWidth="55.0" mnemonicParsing="false" onAction="#home">

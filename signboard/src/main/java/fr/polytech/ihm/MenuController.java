@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -12,23 +13,29 @@ import java.io.IOException;
 
 public class MenuController {
 
+    private static final String fxmlFileHome = "/fxml/home.fxml";
+    private static final String fxmlFileMenu = "/fxml/menu.fxml";
+    private static final String fxmlFileLanguage = "/fxml/language.fxml";
+    private static final String fxmlFileSale = "/fxml/promotions.fxml";
+    private static final String fxmlFileContact = "/fxml/contact.fxml";
+    private static final String fxmlFileDescr = "/fxml/descript_enseigne.fxml";
+
     @FXML
     private VBox menuBar ;
 
     @FXML
     public void home(Event event) throws IOException {
 
-        String fxmlFileMenu = "/fxml/menu.fxml";
-        String fxmlFileHome = "/fxml/home.fxml";
-
         Node node=(Node) event.getSource();
         Stage stage=(Stage) node.getScene().getWindow();
 
-        BorderPane root = new BorderPane();
         FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileHome));
-        root.setCenter((Node) homeLoader.load());
-
+        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
+
+        BorderPane root = new BorderPane();
+        root.setCenter((Node) homeLoader.load());
+        root.setTop((Node) langueLoader.load());
         root.setLeft((Node) menuLoader.load());
 
         Scene scene = new Scene(root);
@@ -40,17 +47,17 @@ public class MenuController {
 
     @FXML
     public void sales(Event event) throws IOException {
-        String fxmlFileMenu = "/fxml/menu.fxml";
-        String fxmlFileSale = "/fxml/promotions.fxml";
 
         Node node=(Node) event.getSource();
         Stage stage=(Stage) node.getScene().getWindow();
 
-        BorderPane root = new BorderPane();
         FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileSale));
-        root.setCenter((Node) homeLoader.load());
-
+        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
+
+        BorderPane root = new BorderPane();
+        root.setCenter((Node) homeLoader.load());
+        root.setTop((Node) langueLoader.load());
         root.setLeft((Node) menuLoader.load());
 
         Scene scene = new Scene(root);
@@ -62,17 +69,17 @@ public class MenuController {
 
     @FXML
     public void map(Event event) throws IOException {
-        String fxmlFileMenu = "/fxml/menu.fxml";
-        String fxmlFileContact = "/fxml/contact.fxml";
 
         Node node=(Node) event.getSource();
         Stage stage=(Stage) node.getScene().getWindow();
 
-        BorderPane root = new BorderPane();
         FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileContact));
-        root.setCenter((Node) homeLoader.load());
-
+        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
+
+        BorderPane root = new BorderPane();
+        root.setCenter((Node) homeLoader.load());
+        root.setTop((Node) langueLoader.load());
         root.setLeft((Node) menuLoader.load());
 
         Scene scene = new Scene(root);
@@ -84,17 +91,17 @@ public class MenuController {
 
     @FXML
     public void description(Event event) throws IOException {
-        String fxmlFileMenu = "/fxml/menu.fxml";
-        String fxmlFileDescr = "/fxml/descript_enseigne.fxml";
 
         Node node=(Node) event.getSource();
         Stage stage=(Stage) node.getScene().getWindow();
 
-        BorderPane root = new BorderPane();
         FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileDescr));
-        root.setCenter((Node) homeLoader.load());
-
+        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
+
+        BorderPane root = new BorderPane();
+        root.setCenter((Node) homeLoader.load());
+        root.setTop((Node) langueLoader.load());
         root.setLeft((Node) menuLoader.load());
 
         Scene scene = new Scene(root);

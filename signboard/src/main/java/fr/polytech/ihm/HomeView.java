@@ -14,7 +14,9 @@ import org.slf4j.LoggerFactory;
 
 public class HomeView extends Application {
 
-    private static final Logger log = LoggerFactory.getLogger(HomeView.class);
+    private static final String fxmlFileHome = "/fxml/home.fxml";
+    private static final String fxmlFileMenu = "/fxml/menu.fxml";
+    private static final String fxmlFileLanguage = "/fxml/language.fxml";
 
     @FXML
     private Image img;
@@ -28,12 +30,13 @@ public class HomeView extends Application {
 
         SvgImageLoaderFactory.install();
 
-        String fxmlFileHome = "/fxml/home.fxml";
-        String fxmlFileMenu = "/fxml/menu.fxml";
-
         BorderPane root = new BorderPane();
         FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileHome));
         root.setCenter((Node) homeLoader.load());
+
+        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
+        root.setTop((Node) langueLoader.load());
+
 
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
         root.setLeft((Node) menuLoader.load());

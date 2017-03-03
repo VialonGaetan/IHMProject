@@ -1,33 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="716.0" maxWidth="1166.0" minHeight="716.0" minWidth="1166.0" prefHeight="716.0" BorderPane.alignment="TOP_RIGHT" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
-   <right>
-      <VBox alignment="TOP_RIGHT" prefHeight="1016.0" prefWidth="58.0" BorderPane.alignment="TOP_CENTER">
-         <children>
-            <MenuButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="-Infinity" mnemonicParsing="false" text="Langue" textAlignment="CENTER">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Action 1" />
-                  <MenuItem mnemonicParsing="false" text="Action 2" />
-               </items>
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </MenuButton>
-            <VBox alignment="CENTER" prefHeight="545.0" prefWidth="142.0" />
-         </children>
-      </VBox>
-   </right>
    <center>
       <AnchorPane prefHeight="746.0" prefWidth="1272.0" BorderPane.alignment="CENTER">
          <children>
