@@ -20,7 +20,7 @@
                         <Insets bottom="30.0" left="10.0" top="0.0" />
                     </VBox.margin>
                 </ImageView>
-                <Button id="buttonHome" minHeight="55.0" minWidth="55.0" mnemonicParsing="false" onAction="#home">
+                <Button styleClass="buttonMenu" id="buttonHome" minHeight="55.0" minWidth="55.0" mnemonicParsing="false" onAction="#home">
                     <VBox.margin>
                         <Insets bottom="0.0" />
                     </VBox.margin>
@@ -35,7 +35,7 @@
                         </ImageView>
                     </graphic>
                 </Button>
-                <Button id="buttonSales" mnemonicParsing="false" onAction="#sales" prefHeight="55.0" prefWidth="55.0" text="" textAlignment="CENTER">
+                <Button styleClass="buttonMenu" id="buttonSales" mnemonicParsing="false" onAction="#sales" prefHeight="55.0" prefWidth="55.0" text="" textAlignment="CENTER">
                     <VBox.margin>
                         <Insets bottom="0.0" />
                     </VBox.margin>
@@ -50,7 +50,7 @@
                         </ImageView>
                     </graphic>
                 </Button>
-                <Button id="buttonDescri" mnemonicParsing="false" onAction="#description" prefHeight="55.0" prefWidth="55.0" text="" textAlignment="CENTER">
+                <Button styleClass="buttonMenu" id="buttonDescri" mnemonicParsing="false" onAction="#description" prefHeight="55.0" prefWidth="55.0" text="" textAlignment="CENTER">
                     <VBox.margin>
                         <Insets bottom="0.0" />
                     </VBox.margin>
@@ -65,7 +65,7 @@
                         </ImageView>
                     </graphic>
                 </Button>
-                <Button id="buttonGallery" mnemonicParsing="false" onAction="#gallery" prefHeight="55.0" prefWidth="55.0" text="" textAlignment="CENTER">
+                <Button styleClass="buttonMenu" id="buttonGallery" mnemonicParsing="false" onAction="#gallery" prefHeight="55.0" prefWidth="55.0" text="" textAlignment="CENTER">
                     <VBox.margin>
                         <Insets bottom="0.0" />
                     </VBox.margin>
@@ -80,7 +80,7 @@
                         </ImageView>
                     </graphic>
                 </Button>
-                <Button id="buttonPosition" mnemonicParsing="false" onAction="#map" prefHeight="55.0" prefWidth="55.0" text="" textAlignment="CENTER">
+                <Button styleClass="buttonMenu" id="buttonPosition" mnemonicParsing="false" onAction="#map" prefHeight="55.0" prefWidth="55.0" text="" textAlignment="CENTER">
                     <font>
                         <Font size="24.0" />
                     </font>
@@ -92,7 +92,7 @@
                         </ImageView>
                     </graphic>
                 </Button>
-                <Button mnemonicParsing="false" onAction="#exit" prefHeight="55.0" prefWidth="55.0" text="" textAlignment="CENTER">
+                <Button styleClass="buttonMenu" mnemonicParsing="false" onAction="#exit" prefHeight="55.0" prefWidth="55.0" text="" textAlignment="CENTER">
                     <font>
                         <Font size="24.0" />
                     </font>
