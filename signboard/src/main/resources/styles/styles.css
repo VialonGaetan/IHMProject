@@ -1,10 +1,3 @@
-.label {
-    -fx-font-size: 12px;
-    -fx-font-weight: bold;
-    -fx-text-fill: #333333;
-    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
-}
-
 .buttonMenu {
     -fx-border-color: black;
     -fx-background-color: white;
@@ -26,4 +19,16 @@
 }
 .buttonPromo#promo3{
     -fx-background-image: url("/images/articles/promo_3.png");
+}
+
+.label.old{
+    -fx-font-size: 15px;
+    -fx-text-fill: red;
+    text-decoration:line-through;
+}
+
+.label.new{
+    -fx-font-size: 17px;
+    -fx-text-fill: green;
+    -fx-font-weight: bold;
 }
