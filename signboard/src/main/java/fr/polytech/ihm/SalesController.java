@@ -5,9 +5,7 @@ import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.HBox;
-
-import java.util.ArrayList;
-import java.util.List;
+import javafx.scene.text.Text;
 
 public class SalesController {
 

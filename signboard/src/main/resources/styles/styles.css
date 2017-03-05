@@ -21,10 +21,10 @@
     -fx-background-image: url("/images/articles/promo_3.png");
 }
 
-.label.old{
+.old{
     -fx-font-size: 15px;
-    -fx-text-fill: red;
-    text-decoration:line-through;
+    -fx-fill: red;
+    -fx-strikethrough: true;
 }
 
 .label.new{
