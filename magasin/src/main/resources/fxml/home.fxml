@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.controller.HomeController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/logo_librairie.gif" />
+               </image>
+            </ImageView>
+            <Label text="To Be or to have">
+               <font>
+                  <Font name="Times New Roman" size="72.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="350.0" top="30.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <Pane fx:id="menuPane" prefHeight="541.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <HBox cache="true" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="941.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/home_presentation_image.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets left="184.0" right="34.0" top="50.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <Pagination prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="TOP_CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="50.0" />
+         </BorderPane.margin>
+      </Pagination>
+   </bottom>
+</BorderPane>
