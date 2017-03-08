@@ -114,8 +114,25 @@ public class MenuController {
     }
 
     @FXML
-    public void gallery() {
-        System.out.println("clic gallery");
+    public void gallery(Event event) throws IOException {
+
+        Node node=(Node) event.getSource();
+        Stage stage=(Stage) node.getScene().getWindow();
+
+        FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileDescr));
+        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
+        FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
+
+        BorderPane root = new BorderPane();
+        root.setCenter((Node) homeLoader.load());
+        root.setTop((Node) langueLoader.load());
+        root.setLeft((Node) menuLoader.load());
+
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("/styles/styles.css");
+        //scene.getStylesheets().add("");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
