@@ -1,5 +1,7 @@
 package fr.polytech.ihm.model.shop;
 
+import fr.polytech.ihm.model.EnumDay;
+
 /**
  * Created by IHMProject on 08/03/17
  */

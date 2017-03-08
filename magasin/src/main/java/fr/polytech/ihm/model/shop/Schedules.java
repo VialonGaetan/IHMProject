@@ -1,8 +1,9 @@
 package fr.polytech.ihm.model.shop;
 
+import fr.polytech.ihm.model.EnumDay;
+
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by IHMProject on 08/03/17

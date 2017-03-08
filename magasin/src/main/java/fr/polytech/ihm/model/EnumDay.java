@@ -1,4 +1,4 @@
-package fr.polytech.ihm.model.shop;
+package fr.polytech.ihm.model;
 
 /**
  * Created by IHMProject on 08/03/17

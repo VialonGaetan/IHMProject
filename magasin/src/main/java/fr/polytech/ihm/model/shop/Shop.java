@@ -1,6 +1,9 @@
 package fr.polytech.ihm.model.shop;
 
+import fr.polytech.ihm.model.EnumDay;
 import javafx.fxml.FXML;
+import javafx.scene.control.ListView;
+import javafx.scene.image.ImageView;
 
 import java.awt.image.BufferedImage;
 import java.util.*;
@@ -23,6 +26,20 @@ public class Shop
         this.contact     = contact;
     }
 
+    @FXML
+    private ImageView Viewimage;
 
+    @FXML
+    private ListView<?> Viewadress;
+
+    @FXML
+    private ListView<?> Viewschedules;
+
+    @FXML
+    private ListView<?> Viewcontact;
+
+    @FXML
+    private void initialize(){
+    }
 
 }
