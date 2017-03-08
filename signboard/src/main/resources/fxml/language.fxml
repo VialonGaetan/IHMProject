@@ -2,14 +2,30 @@
 
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <MenuButton layoutX="1291.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="75.0" text="Langue">
+      <MenuButton layoutX="1291.0" mnemonicParsing="false" popupSide="LEFT" prefHeight="57.0" prefWidth="91.0" stylesheets="@../styles/StyleButtonLangues.css" AnchorPane.leftAnchor="1200.0">
         <items>
-          <MenuItem mnemonicParsing="false" text="Français" />
-          <MenuItem mnemonicParsing="false" text="English" />
+          <MenuItem mnemonicParsing="false" text="Francais">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/langues/france3.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></MenuItem>
+          <MenuItem mnemonicParsing="false" text="English">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/langues/drapeau-royaume-uni3.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></MenuItem>
         </items>
       </MenuButton>
    </children>
