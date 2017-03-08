@@ -22,4 +22,13 @@ public class Command
         this.daywhenok = day;
         this.hourwhenok = hourwhenok;
     }
+
+
+    private HashMap<Product,Integer> getCommand() { return command; }
+
+    private int getNumcommand() { return numcommand; }
+
+    private EnumDay getDay() { return daywhenok; }
+
+    private int getHourwhenok() { return hourwhenok; }
 }

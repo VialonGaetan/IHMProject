@@ -42,4 +42,9 @@ public class Shop
     private void initialize(){
     }
 
+    public Adress getAdress() { return adress;}
+
+    public HashMap<EnumDay,int[]> getSchedules() { return schedules; }
+
+    public Contact getContact() { return contact;}
 }
