@@ -35,14 +35,14 @@ public class HomeView extends Application {
 
         BorderPane root = new BorderPane();
         FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileHome));
-        root.setCenter((Node) homeLoader.load());
+        root.setCenter(homeLoader.load());
 
         FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
-        root.setTop((Node) langueLoader.load());
+        root.setTop(langueLoader.load());
 
 
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
-        root.setLeft((Node) menuLoader.load());
+        root.setLeft(menuLoader.load());
 
         Scene scene = new Scene(root, 1366, 716);
         scene.getStylesheets().add("/styles/styles.css");

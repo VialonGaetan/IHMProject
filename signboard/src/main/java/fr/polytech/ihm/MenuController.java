@@ -46,7 +46,7 @@ public class MenuController {
     }
 
     @FXML
-    public void sales(Event event) throws IOException {
+    public void sales(Event event) throws Exception {
 
         Node node=(Node) event.getSource();
         Stage stage=(Stage) node.getScene().getWindow();
@@ -56,15 +56,17 @@ public class MenuController {
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
 
         BorderPane root = new BorderPane();
-        root.setCenter((Node) homeLoader.load());
-        root.setTop((Node) langueLoader.load());
-        root.setLeft((Node) menuLoader.load());
+        root.setCenter(homeLoader.load());
+        root.setTop(langueLoader.load());
+        root.setLeft(menuLoader.load());
 
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/styles.css");
         scene.getStylesheets().add("/styles/styleButtonSales.css");
         stage.setScene(scene);
         stage.show();
+
+
     }
 
     @FXML
@@ -78,9 +80,9 @@ public class MenuController {
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
 
         BorderPane root = new BorderPane();
-        root.setCenter((Node) homeLoader.load());
-        root.setTop((Node) langueLoader.load());
-        root.setLeft((Node) menuLoader.load());
+        root.setCenter(homeLoader.load());
+        root.setTop(langueLoader.load());
+        root.setLeft(menuLoader.load());
 
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/styles.css");
@@ -100,9 +102,9 @@ public class MenuController {
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
 
         BorderPane root = new BorderPane();
-        root.setCenter((Node) homeLoader.load());
-        root.setTop((Node) langueLoader.load());
-        root.setLeft((Node) menuLoader.load());
+        root.setCenter(homeLoader.load());
+        root.setTop(langueLoader.load());
+        root.setLeft(menuLoader.load());
 
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/styles.css");

@@ -5,207 +5,15 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="stage" maxHeight="716.0" maxWidth="1166.0" minHeight="716.0" minWidth="1166.0" prefHeight="716.0" prefWidth="1166.0" BorderPane.alignment="TOP_RIGHT" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.SalesController">
+<BorderPane fx:id="mainBorderPane" maxHeight="716.0" maxWidth="1166.0" minHeight="716.0" minWidth="1166.0" prefHeight="716.0" prefWidth="1166.0" BorderPane.alignment="TOP_RIGHT" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.SalesController">
     <center>
-        <ListView fx:id="listSales" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="1152.0" BorderPane.alignment="CENTER">
-            <HBox id="livre_1" alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="983.0" BorderPane.alignment="CENTER">
-                <children>
-                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="images/articles/livre.jpg" />
-                        </image>
-                        <HBox.margin>
-                            <Insets left="50.0" />
-                        </HBox.margin></ImageView>
-                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="images/promotion/60.png" />
-                        </image>
-                    </ImageView>
-                    <Label text="L'horizon à l'envers">
-                        <HBox.margin>
-                            <Insets left="30.0" />
-                        </HBox.margin>
-                        <font>
-                            <Font name="System Bold" size="12.0" />
-                        </font>
-                    </Label>
-                    <Label text="Marc Lévy">
-                        <HBox.margin>
-                            <Insets left="5.0" />
-                        </HBox.margin>
-                    </Label>
-                    <Pane prefHeight="135.0" prefWidth="500.0" />
-                    <Text styleClass="old" strokeType="OUTSIDE" strokeWidth="0.0" text="21.90 €" />
-                    <Label styleClass="new" text="9.95 €">
-                        <HBox.margin>
-                            <Insets left="10.0" />
-                        </HBox.margin>
-                    </Label>
-                </children>
-                <opaqueInsets>
-                    <Insets left="20.0" />
-                </opaqueInsets>
-            </HBox>
-            <HBox id="highTech_1" alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="983.0" BorderPane.alignment="CENTER">
-                <children>
-                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="images/articles/mac.jpg" />
-                        </image>
-                        <HBox.margin>
-                            <Insets left="50.0" />
-                        </HBox.margin></ImageView>
-                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="images/promotion/30.png" />
-                        </image>
-                    </ImageView>
-                    <Label text="Apple iMac 21.5">
-                        <HBox.margin>
-                            <Insets left="30.0" />
-                        </HBox.margin>
-                        <font>
-                            <Font name="System Bold" size="12.0" />
-                        </font>
-                    </Label>
-                    <Label text="1 To Fusion Drive 8 Go RAM ">
-                        <HBox.margin>
-                            <Insets left="5.0" />
-                        </HBox.margin>
-                    </Label>
-                    <Pane prefHeight="135.0" prefWidth="370.0" />
-                    <Text styleClass="old" strokeType="OUTSIDE" strokeWidth="0.0" text="2100.99 €" />
-                    <Label styleClass="new" text="1500.99 €">
-                        <HBox.margin>
-                            <Insets left="10.0" />
-                        </HBox.margin>
-                    </Label>
-                </children>
-            </HBox>
-            <HBox id="dvd_1" alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="983.0" BorderPane.alignment="CENTER">
-                <children>
-                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="images/articles/dvd.png" />
-                        </image>
-                        <HBox.margin>
-                            <Insets left="50.0" />
-                        </HBox.margin>
-                    </ImageView>
-                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="images/promotion/40.png" />
-                        </image>
-                    </ImageView>
-                    <Label text="Game of Thrones">
-                        <HBox.margin>
-                            <Insets left="30.0" />
-                        </HBox.margin>
-                        <font>
-                            <Font name="System Bold" size="12.0" />
-                        </font>
-                    </Label>
-                    <Label text="Coffret Intégral de la Saison 4">
-                        <HBox.margin>
-                            <Insets left="5.0" />
-                        </HBox.margin>
-                    </Label>
-                    <Pane prefHeight="135.0" prefWidth="400" />
-                    <Text styleClass="old" strokeType="OUTSIDE" strokeWidth="0.0" text="35.50 €" />
-                    <Label styleClass="new" text="21.30 €">
-                        <HBox.margin>
-                            <Insets left="10.0" />
-                        </HBox.margin>
-                    </Label>
-                </children>
-            </HBox>
-            <HBox id="highTech_2" alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="983.0" BorderPane.alignment="CENTER">
-                <children>
-                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="images/articles/wiko.png" />
-                        </image>
-                        <HBox.margin>
-                            <Insets left="50.0" />
-                        </HBox.margin></ImageView>
-                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="images/promotion/50.png" />
-                        </image>
-                    </ImageView>
-                    <Label text="Smartphone Wiko Sunny">
-                        <HBox.margin>
-                            <Insets left="30.0" />
-                        </HBox.margin>
-                        <font>
-                            <Font name="System Bold" size="12.0" />
-                        </font>
-                    </Label>
-                    <Label text="8 Go Double SIM Kaki">
-                        <HBox.margin>
-                            <Insets left="5.0" />
-                        </HBox.margin>
-                    </Label>
-                    <Pane prefHeight="200.0" prefWidth="385.0" />
-                    <Text styleClass="old" strokeType="OUTSIDE" strokeWidth="0.0" text="139.99 €" />
-                    <Label styleClass="new" text="69.99 €">
-                        <HBox.margin>
-                            <Insets left="10.0" />
-                        </HBox.margin>
-                    </Label>
-                </children>
-            </HBox>
-            <HBox id="livre_2" alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="1123.0" BorderPane.alignment="CENTER">
-                <children>
-                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="images/articles/book_50.png" />
-                        </image>
-                        <HBox.margin>
-                            <Insets left="50.0" />
-                        </HBox.margin></ImageView>
-                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="images/promotion/40.png" />
-                        </image>
-                    </ImageView>
-                    <Label text="Fifty Shades - Tome 1">
-                        <HBox.margin>
-                            <Insets left="30.0" />
-                        </HBox.margin>
-                        <font>
-                            <Font name="System Bold" size="12.0" />
-                        </font>
-                    </Label>
-                    <Label text="Cinquante nuances de Grey">
-                        <HBox.margin>
-                            <Insets left="5.0" />
-                        </HBox.margin>
-                    </Label>
-                    <Pane prefHeight="200.0" prefWidth="385.0" />
-                    <Text styleClass="old" strokeType="OUTSIDE" strokeWidth="0.0" text="21.90 €" />
-                    <Label styleClass="new" text="13.20 €">
-                        <HBox.margin>
-                            <Insets left="10.0" />
-                        </HBox.margin>
-                    </Label>
-                </children>
-            </HBox>
+        <ListView fx:id="listView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="1152.0" BorderPane.alignment="CENTER">
             <opaqueInsets>
                 <Insets left="20.0" />
             </opaqueInsets>
-            <BorderPane.margin>
-                <Insets bottom="40.0" right="30.0" />
-            </BorderPane.margin>
         </ListView>
     </center>
     <top>
@@ -213,7 +21,7 @@
             <bottom>
                 <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                     <children>
-                        <Button layoutX="1026.0" layoutY="179.0" mnemonicParsing="false" text="Tri par promotions" />
+                        <Button layoutX="1026.0" layoutY="179.0" mnemonicParsing="false" text="Tri par promotions" onAction="#displayAll"/>
                         <Button layoutX="932.0" layoutY="180.0" mnemonicParsing="false" text="Tri par prix" />
                         <Label layoutX="60.0" layoutY="103.0" text="Filtre :" />
                         <CheckBox fx:id="filtreLivres" layoutX="56.0" layoutY="143.0" mnemonicParsing="false" onAction="#filtreLivres" text="Livres" />
