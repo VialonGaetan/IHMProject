@@ -35,7 +35,7 @@
                 <version>2.0</version>
                 <configuration>
 
-                    <mainClass>fr.polytech.ihm.MainApp</mainClass>
+                    <mainClass>fr.polytech.ihm.Main</mainClass>
 
                     <!-- only required if signing the jar file -->
                     <keyStoreAlias>example-user</keyStoreAlias>

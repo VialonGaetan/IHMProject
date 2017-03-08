@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.ProduitsController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.controller.ProduitsController">
    <left>
       <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -59,17 +59,12 @@
    <center>
       <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox prefHeight="200.0" prefWidth="800.0">
+            <VBox fx:id="productsVBox" prefHeight="200.0" prefWidth="800.0">
                <children>
-                  <ListView orientation="HORIZONTAL" prefHeight="200.0" prefWidth="500.0">
+                  <ListView fx:id="listView1" orientation="HORIZONTAL" prefHeight="200.0" prefWidth="500.0">
                      <VBox.margin>
                         <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
                      </VBox.margin></ListView>
-                  <ListView orientation="HORIZONTAL" prefHeight="200.0" prefWidth="200.0">
-                     <VBox.margin>
-                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
-                     </VBox.margin>
-                  </ListView>
                </children>
             </VBox>
             <ScrollBar orientation="VERTICAL" prefHeight="541.0" prefWidth="25.0">
@@ -270,7 +265,7 @@
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/logo_librairie.gif" />
+                  <Image url="@/images/logo_librairie.gif" />
                </image>
             </ImageView>
             <Label text="Produits">
