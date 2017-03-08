@@ -1,0 +1,124 @@
+package fr.polytech.ihm;
+
+import javafx.event.Event;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+import java.io.IOException;
+
+public class MenuController {
+
+    private static final String fxmlFileHome = "/fxml/home.fxml";
+    private static final String fxmlFileMenu = "/fxml/menu.fxml";
+    private static final String fxmlFileLanguage = "/fxml/language.fxml";
+    private static final String fxmlFileSale = "/fxml/promotions.fxml";
+    private static final String fxmlFileContact = "/fxml/contact.fxml";
+    private static final String fxmlFileDescr = "/fxml/descript_enseigne.fxml";
+
+    @FXML
+    private VBox menuBar ;
+
+    @FXML
+    public void home(Event event) throws IOException {
+
+        Node node=(Node) event.getSource();
+        Stage stage=(Stage) node.getScene().getWindow();
+
+        FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileHome));
+        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
+        FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
+
+        BorderPane root = new BorderPane();
+        root.setCenter((Node) homeLoader.load());
+        root.setTop((Node) langueLoader.load());
+        root.setLeft((Node) menuLoader.load());
+
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("/styles/styles.css");
+        scene.getStylesheets().add("/styles/styleButtonHome.css");
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+    @FXML
+    public void sales(Event event) throws IOException {
+
+        Node node=(Node) event.getSource();
+        Stage stage=(Stage) node.getScene().getWindow();
+
+        FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileSale));
+        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
+        FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
+
+        BorderPane root = new BorderPane();
+        root.setCenter((Node) homeLoader.load());
+        root.setTop((Node) langueLoader.load());
+        root.setLeft((Node) menuLoader.load());
+
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("/styles/styles.css");
+        scene.getStylesheets().add("/styles/styleButtonSales.css");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    public void map(Event event) throws IOException {
+
+        Node node=(Node) event.getSource();
+        Stage stage=(Stage) node.getScene().getWindow();
+
+        FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileContact));
+        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
+        FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
+
+        BorderPane root = new BorderPane();
+        root.setCenter((Node) homeLoader.load());
+        root.setTop((Node) langueLoader.load());
+        root.setLeft((Node) menuLoader.load());
+
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("/styles/styles.css");
+        scene.getStylesheets().add("/styles/styleButtonContact.css");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    public void description(Event event) throws IOException {
+
+        Node node=(Node) event.getSource();
+        Stage stage=(Stage) node.getScene().getWindow();
+
+        FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileDescr));
+        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
+        FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
+
+        BorderPane root = new BorderPane();
+        root.setCenter((Node) homeLoader.load());
+        root.setTop((Node) langueLoader.load());
+        root.setLeft((Node) menuLoader.load());
+
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("/styles/styles.css");
+        scene.getStylesheets().add("/styles/styleButtonDescri.css");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    public void gallery() {
+        System.out.println("clic gallery");
+    }
+
+    @FXML
+    public void exit() {
+        menuBar.getScene().getWindow().hide();
+    }
+
+}

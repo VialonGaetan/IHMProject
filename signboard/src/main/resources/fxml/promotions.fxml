@@ -1,276 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
-    <left>
-        <VBox prefHeight="1080.0" prefWidth="260.0">
-            <children>
-                <ImageView fitHeight="190.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../images/icones/logo.png" />
-                    </image>
-                    <VBox.margin>
-                        <Insets bottom="120.0" left="20.0" top="20.0" />
-                    </VBox.margin>
-                </ImageView>
-                <Button mnemonicParsing="false" prefHeight="82.0" prefWidth="48.0" text="">
-                    <VBox.margin>
-                        <Insets bottom="30.0" />
-                    </VBox.margin>
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                    <effect>
-                        <Blend />
-                    </effect>
-                    <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                    </cursor>
-                    <graphic>
-                        <ImageView fitHeight="109.0" fitWidth="64.0" preserveRatio="true" smooth="true">
-                            <image>
-                                <Image url="@../images/icones/home.PNG" />
-                            </image>
-                        </ImageView>
-                    </graphic>
-                </Button>
-                <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="216.0" text="Promotions" textAlignment="CENTER">
-                    <VBox.margin>
-                        <Insets bottom="30.0" />
-                    </VBox.margin>
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                </Button>
-                <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="36.0" text="" textAlignment="CENTER">
-                    <VBox.margin>
-                        <Insets bottom="30.0" />
-                    </VBox.margin>
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                    <graphic>
-                        <ImageView fitHeight="109.0" fitWidth="64.0" preserveRatio="true" smooth="true">
-                            <image>
-                                <Image url="@../images/icones/description.PNG" />
-                            </image>
-                        </ImageView>
-                    </graphic>
-                </Button>
-                <Button mnemonicParsing="false" prefHeight="79.0" prefWidth="68.0" text="" textAlignment="CENTER">
-                    <VBox.margin>
-                        <Insets bottom="30.0" />
-                    </VBox.margin>
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                    <graphic>
-                        <ImageView fitHeight="69.0" fitWidth="68.0" preserveRatio="true" smooth="true">
-                            <image>
-                                <Image url="@../images/icones/gallery.PNG" />
-                            </image>
-                        </ImageView>
-                    </graphic>
-                </Button>
-                <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="86.0" text="" textAlignment="CENTER">
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                    <graphic>
-                        <ImageView fitHeight="69.0" fitWidth="68.0" preserveRatio="true" smooth="true">
-                            <image>
-                                <Image url="@../images/icones/position.PNG" />
-                            </image>
-                        </ImageView>
-                    </graphic>
-                </Button>
-            </children>
-        </VBox>
-    </left>
-    <effect>
-        <Blend />
-    </effect>
+<BorderPane fx:id="stage" maxHeight="716.0" maxWidth="1166.0" minHeight="716.0" minWidth="1166.0" prefHeight="716.0" prefWidth="1166.0" BorderPane.alignment="TOP_RIGHT" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.SalesController">
     <center>
-        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="TOP_RIGHT">
-            <center>
-                <ListView prefHeight="794.0" prefWidth="1488.0" BorderPane.alignment="CENTER">
-                    <HBox alignment="CENTER_LEFT" prefHeight="232.0" prefWidth="1404.0" BorderPane.alignment="CENTER">
-                        <children>
-                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+        <ListView fx:id="listSales" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="1152.0" BorderPane.alignment="CENTER">
+            <HBox id="livre_1" alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="983.0" BorderPane.alignment="CENTER">
+                <children>
+                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@../images/articles/livre.jpg" />
+                            <Image url="images/articles/livre.jpg" />
                         </image>
                         <HBox.margin>
-                           <Insets left="50.0" />
+                            <Insets left="50.0" />
                         </HBox.margin></ImageView>
-                     <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@../images/promotion/80.png" />
+                            <Image url="images/promotion/60.png" />
                         </image>
-                     </ImageView>
-                            <Label text="Marc LEVY">
+                    </ImageView>
+                    <Label text="L'horizon à l'envers">
                         <HBox.margin>
-                           <Insets left="50.0" />
+                            <Insets left="30.0" />
                         </HBox.margin>
                         <font>
-                           <Font name="System Bold" size="30.0" />
-                        </font></Label>
-                     <Label text="L'horizon à l'envers">
-                        <font>
-                           <Font size="24.0" />
+                            <Font name="System Bold" size="12.0" />
                         </font>
+                    </Label>
+                    <Label text="Marc Lévy">
                         <HBox.margin>
-                           <Insets left="10.0" />
+                            <Insets left="5.0" />
                         </HBox.margin>
-                     </Label>
-                     <AnchorPane prefHeight="232.0" prefWidth="442.0" />
-                     <ImageView fitHeight="56.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true">
+                    </Label>
+                    <Pane prefHeight="135.0" prefWidth="500.0" />
+                    <Text styleClass="old" strokeType="OUTSIDE" strokeWidth="0.0" text="21.90 €" />
+                    <Label styleClass="new" text="9.95 €">
+                        <HBox.margin>
+                            <Insets left="10.0" />
+                        </HBox.margin>
+                    </Label>
+                </children>
+                <opaqueInsets>
+                    <Insets left="20.0" />
+                </opaqueInsets>
+            </HBox>
+            <HBox id="highTech_1" alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="983.0" BorderPane.alignment="CENTER">
+                <children>
+                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@../images/articles/prix_livre.PNG" />
+                            <Image url="images/articles/mac.jpg" />
                         </image>
-                     </ImageView>
-                        </children>
-                  <opaqueInsets>
-                     <Insets left="20.0" />
-                  </opaqueInsets>
-                    </HBox>
-                    <HBox alignment="CENTER_LEFT" prefHeight="220.0" prefWidth="1404.0" BorderPane.alignment="CENTER">
-                        <children>
-                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                                <image>
-                                    <Image url="@../images/articles/mac.jpg" />
-                                </image>
-                                <HBox.margin>
-                                    <Insets left="50.0" />
-                                </HBox.margin></ImageView>
-                     <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                        <HBox.margin>
+                            <Insets left="50.0" />
+                        </HBox.margin></ImageView>
+                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@../images/promotion/30.png" />
+                            <Image url="images/promotion/30.png" />
                         </image>
-                     </ImageView>
-                     <Label text="Apple iMac">
+                    </ImageView>
+                    <Label text="Apple iMac 21.5">
+                        <HBox.margin>
+                            <Insets left="30.0" />
+                        </HBox.margin>
                         <font>
-                           <Font name="System Bold" size="30.0" />
+                            <Font name="System Bold" size="12.0" />
                         </font>
+                    </Label>
+                    <Label text="1 To Fusion Drive 8 Go RAM ">
                         <HBox.margin>
-                           <Insets left="50.0" />
+                            <Insets left="5.0" />
                         </HBox.margin>
-                     </Label>
-                     <Label text="LED 1 To Fusion Drive 8 Go RAM">
-                        <font>
-                           <Font size="24.0" />
-                        </font>
+                    </Label>
+                    <Pane prefHeight="135.0" prefWidth="370.0" />
+                    <Text styleClass="old" strokeType="OUTSIDE" strokeWidth="0.0" text="2100.99 €" />
+                    <Label styleClass="new" text="1500.99 €">
                         <HBox.margin>
-                           <Insets left="10.0" />
+                            <Insets left="10.0" />
                         </HBox.margin>
-                     </Label>
-                     <AnchorPane prefHeight="220.0" prefWidth="168.0" />
-                     <ImageView fitHeight="89.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                    </Label>
+                </children>
+            </HBox>
+            <HBox id="dvd_1" alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="983.0" BorderPane.alignment="CENTER">
+                <children>
+                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@../images/articles/prix_mac.PNG" />
+                            <Image url="images/articles/dvd.png" />
                         </image>
-                     </ImageView>
-                        </children>
-                    </HBox>
-                    <HBox alignment="CENTER_LEFT" prefHeight="220.0" prefWidth="1404.0" BorderPane.alignment="CENTER">
-                        <children>
-                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                                <image>
-                                    <Image url="@../images/articles/casque.jpg" />
-                                </image>
-                                <HBox.margin>
-                                    <Insets left="50.0" />
-                                </HBox.margin></ImageView>
-                     <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                           <Image url="@../images/promotion/60.png" />
-                        </image>
-                     </ImageView>
-                     <Label text="Casque bluetooth">
-                        <font>
-                           <Font name="System Bold" size="30.0" />
-                        </font>
                         <HBox.margin>
-                           <Insets left="50.0" />
+                            <Insets left="50.0" />
                         </HBox.margin>
-                     </Label>
-                     <Label>
-                        <font>
-                           <Font size="24.0" />
-                        </font>
-                        <HBox.margin>
-                           <Insets left="10.0" />
-                        </HBox.margin>
-                     </Label>
-                     <AnchorPane prefHeight="220.0" prefWidth="488.0" />
-                     <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    </ImageView>
+                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@../images/articles/prix_casque.PNG" />
+                            <Image url="images/promotion/40.png" />
                         </image>
-                     </ImageView>
-                        </children>
-                    </HBox>
-               <opaqueInsets>
-                  <Insets left="20.0" />
-               </opaqueInsets>
-                </ListView>
-            </center>
-         <top>
-            <BorderPane prefHeight="260.0" prefWidth="1420.0" BorderPane.alignment="CENTER">
-               <center>
-                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-                     <bottom>
-                        <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-                           <children>
-                              <AnchorPane prefHeight="100.0" prefWidth="262.0" />
-                              <Button mnemonicParsing="false" prefHeight="49.0" prefWidth="190.0" text="Tri par promotion">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                              </Button>
-                              <AnchorPane prefHeight="100.0" prefWidth="882.0" />
-                              <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="165.0" text="Tri par prix">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                              </Button>
-                           </children>
-                        </HBox>
-                     </bottom>
-                  </BorderPane>
-               </center></BorderPane>
-         </top>
-        </BorderPane>
+                    </ImageView>
+                    <Label text="Game of Thrones">
+                        <HBox.margin>
+                            <Insets left="30.0" />
+                        </HBox.margin>
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                    <Label text="Coffret Intégral de la Saison 4">
+                        <HBox.margin>
+                            <Insets left="5.0" />
+                        </HBox.margin>
+                    </Label>
+                    <Pane prefHeight="135.0" prefWidth="400" />
+                    <Text styleClass="old" strokeType="OUTSIDE" strokeWidth="0.0" text="35.50 €" />
+                    <Label styleClass="new" text="21.30 €">
+                        <HBox.margin>
+                            <Insets left="10.0" />
+                        </HBox.margin>
+                    </Label>
+                </children>
+            </HBox>
+            <HBox id="highTech_2" alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="983.0" BorderPane.alignment="CENTER">
+                <children>
+                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="images/articles/wiko.png" />
+                        </image>
+                        <HBox.margin>
+                            <Insets left="50.0" />
+                        </HBox.margin></ImageView>
+                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="images/promotion/50.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Smartphone Wiko Sunny">
+                        <HBox.margin>
+                            <Insets left="30.0" />
+                        </HBox.margin>
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                    <Label text="8 Go Double SIM Kaki">
+                        <HBox.margin>
+                            <Insets left="5.0" />
+                        </HBox.margin>
+                    </Label>
+                    <Pane prefHeight="200.0" prefWidth="385.0" />
+                    <Text styleClass="old" strokeType="OUTSIDE" strokeWidth="0.0" text="139.99 €" />
+                    <Label styleClass="new" text="69.99 €">
+                        <HBox.margin>
+                            <Insets left="10.0" />
+                        </HBox.margin>
+                    </Label>
+                </children>
+            </HBox>
+            <HBox id="livre_2" alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="1123.0" BorderPane.alignment="CENTER">
+                <children>
+                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="images/articles/book_50.png" />
+                        </image>
+                        <HBox.margin>
+                            <Insets left="50.0" />
+                        </HBox.margin></ImageView>
+                    <ImageView fitHeight="87.5" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="images/promotion/40.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Fifty Shades - Tome 1">
+                        <HBox.margin>
+                            <Insets left="30.0" />
+                        </HBox.margin>
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                    <Label text="Cinquante nuances de Grey">
+                        <HBox.margin>
+                            <Insets left="5.0" />
+                        </HBox.margin>
+                    </Label>
+                    <Pane prefHeight="200.0" prefWidth="385.0" />
+                    <Text styleClass="old" strokeType="OUTSIDE" strokeWidth="0.0" text="21.90 €" />
+                    <Label styleClass="new" text="13.20 €">
+                        <HBox.margin>
+                            <Insets left="10.0" />
+                        </HBox.margin>
+                    </Label>
+                </children>
+            </HBox>
+            <opaqueInsets>
+                <Insets left="20.0" />
+            </opaqueInsets>
+            <BorderPane.margin>
+                <Insets bottom="40.0" right="30.0" />
+            </BorderPane.margin>
+        </ListView>
     </center>
-   <right>
-          <VBox alignment="TOP_RIGHT" prefHeight="1080.0" prefWidth="172.0" BorderPane.alignment="CENTER">
-              <children>
-                  <MenuButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="51.0" prefWidth="152.0" text="Langue" textAlignment="CENTER">
-                      <items>
-                          <MenuItem mnemonicParsing="false" text="French">
-                          <MenuItem mnemonicParsing="false" text="English" />
-                      </items>
-                      <font>
-                          <Font size="24.0" />
-                      </font>
-                  </MenuButton>
-                  <VBox alignment="CENTER" prefHeight="1029.0" prefWidth="166.0" />
-              </children>
-          </VBox>
-   </right>
+    <top>
+        <BorderPane prefHeight="158.0" prefWidth="1182.0" BorderPane.alignment="CENTER">
+            <bottom>
+                <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button layoutX="1026.0" layoutY="179.0" mnemonicParsing="false" text="Tri par promotions" />
+                        <Button layoutX="932.0" layoutY="180.0" mnemonicParsing="false" text="Tri par prix" />
+                        <Label layoutX="60.0" layoutY="103.0" text="Filtre :" />
+                        <CheckBox fx:id="filtreLivres" layoutX="56.0" layoutY="143.0" mnemonicParsing="false" onAction="#filtreLivres" text="Livres" />
+                        <CheckBox fx:id="filtreDvds" layoutX="153.0" layoutY="141.0" mnemonicParsing="false" onAction="#filtreDvds" text="Dvds" />
+                        <CheckBox fx:id="filtreHighTech" layoutX="241.0" layoutY="143.0" mnemonicParsing="false" onAction="#filtreHighTech" text="High-tech" />
+                    </children>
+                </Pane>
+            </bottom></BorderPane>
+    </top>
 </BorderPane>

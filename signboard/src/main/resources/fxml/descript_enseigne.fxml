@@ -1,146 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
-   <left>
-      <VBox prefHeight="1080.0" prefWidth="150.0">
-         <children>
-            <ImageView fitHeight="190.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/icones/logo.png" />
-               </image>
-               <VBox.margin>
-                  <Insets bottom="120.0" left="20.0" top="20.0" />
-               </VBox.margin>
-            </ImageView>
-            <Button mnemonicParsing="false" prefHeight="79.0" prefWidth="42.0">
-               <VBox.margin>
-                  <Insets bottom="30.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="24.0" />
-               </font>
-               <effect>
-                  <Blend />
-               </effect>
-               <cursor>
-                  <Cursor fx:constant="DEFAULT" />
-               </cursor>
-               <graphic>
-                  <ImageView fitHeight="79.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/icones/home.PNG" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="92.0" text="" textAlignment="CENTER">
-               <VBox.margin>
-                  <Insets bottom="30.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="24.0" />
-               </font>
-			   <graphic>
-      <ImageView fitHeight="82.0" fitWidth="62.0" preserveRatio="true" smooth="true">
-        <image>
-          <Image url="@../images/sales.png" />
-        </image>
-      </ImageView>
-   </graphic>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="304.0" text="Nous découvrir" textAlignment="CENTER">
-               <VBox.margin>
-                  <Insets bottom="30.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="92.0" textAlignment="CENTER">
-               <VBox.margin>
-                  <Insets bottom="30.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="25.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="96.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/icones/gallery.PNG" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="86.0" text="" textAlignment="CENTER">
-               <font>
-                  <Font size="24.0" />
-               </font>
-			   <graphic>
-      <ImageView fitHeight="69.0" fitWidth="68.0" preserveRatio="true" smooth="true">
-        <image>
-          <Image url="@../images/position.png" />
-        </image>
-      </ImageView>
-	  </graphic>
-            </Button>
-         </children>
-      </VBox>
-   </left>
-   <effect>
-      <Blend />
-   </effect>
+<BorderPane maxHeight="716.0" maxWidth="1166.0" minHeight="716.0" minWidth="1166.0" prefHeight="716.0" BorderPane.alignment="TOP_RIGHT" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="TOP_RIGHT">
-         <right>
-            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
-               <children>
-                  <MenuButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="-Infinity" mnemonicParsing="false" text="Langue" textAlignment="CENTER">
-                    <items>
-                      <MenuItem mnemonicParsing="false" text="Action 1" />
-                      <MenuItem mnemonicParsing="false" text="Action 2" />
-                    </items>
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </MenuButton>
-                  <VBox alignment="CENTER" prefHeight="1029.0" prefWidth="258.0" />
-               </children>
-            </VBox>
-         </right>
-         <center>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-               <children>
-                  <ImageView fitHeight="320.0" fitWidth="500.0" layoutX="132.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/photos/magasin.jpg" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="343.0" fitWidth="706.0" layoutX="624.0" layoutY="581.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/photos/magasin2.jpg" />
-                     </image>
-                  </ImageView>
-                  <ScrollBar layoutX="1467.0" layoutY="68.0" orientation="VERTICAL" prefHeight="970.0" prefWidth="18.0" />
-                  <TextArea layoutX="770.0" layoutY="110.0" prefHeight="372.0" prefWidth="566.0" text="Bla bla ...&#10;Notre marque est géniale, ..." />
-                  <TextArea layoutX="90.0" layoutY="540.0" prefHeight="350.0" prefWidth="482.0" text="Regardez nous sommes super!&#10;bla bla ..." />
-               </children>
-            </AnchorPane>
-         </center>
-      </BorderPane>
+      <AnchorPane prefHeight="746.0" prefWidth="1272.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="258.0" fitWidth="322.0" layoutX="450.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/photos/magasin.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="241.0" fitWidth="422.0" layoutX="924.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/photos/magasin2.jpg" />
+               </image>
+            </ImageView>
+            <ScrollBar layoutX="1396.0" layoutY="90.0" orientation="VERTICAL" prefHeight="678.0" prefWidth="0.0" />
+            <TextArea layoutX="942.0" layoutY="110.0" prefHeight="268.0" prefWidth="394.0" text="Bla bla ...&#10;Notre marque est géniale, ..." />
+            <TextArea layoutX="472.0" layoutY="464.0" prefHeight="218.0" prefWidth="362.0" text="Regardez nous sommes super!&#10;bla bla ..." />
+         </children>
+      </AnchorPane>
    </center>
 </BorderPane>

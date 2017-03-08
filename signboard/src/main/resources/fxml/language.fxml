@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuButton layoutX="1291.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="75.0" text="Langue">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Français" />
+          <MenuItem mnemonicParsing="false" text="English" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
