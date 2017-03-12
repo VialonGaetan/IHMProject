@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.controller.MenuController">
+   <children>
+      <MenuButton fx:id="listButton" alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="75.0" prefWidth="75.0" stylesheets="@styles/MenuBar.css">
+         <items>
+            <MenuItem mnemonicParsing="false">
+               <graphic>
+                  <Button fx:id="homeButton" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Accueil" />
+               </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false">
+               <graphic>
+                  <Button fx:id="shopButton" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Nos magasins" />
+               </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false">
+               <graphic>
+                  <Button fx:id="infosButton" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Renseignements" />
+               </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false">
+               <graphic>
+                  <Button fx:id="eventButton" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Événements" />
+               </graphic>
+            </MenuItem>
+         </items>
+      </MenuButton>
+   </children>
+</Pane>

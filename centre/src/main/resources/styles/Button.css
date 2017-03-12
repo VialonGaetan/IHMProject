@@ -1,6 +1,6 @@
 .button {
   -fx-display: inline-block;
-  -fx-background-image:url(../images/button2b.png);
+  -fx-background-image:url(../images/MenuBar/button2b.png);
   -fx-background-color:#6B6B6B;
   -fx-border-radius: 10px;
   -fx-border: none;
