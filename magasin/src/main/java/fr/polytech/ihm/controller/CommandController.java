@@ -1,16 +1,50 @@
 package fr.polytech.ihm.controller;
 
+import fr.polytech.ihm.model.command.Command;
+import fr.polytech.ihm.model.product.Product;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.layout.Pane;
 
-/**
- * @author Alexandre Clement
- * @since 15/02/2017.
- */
-public class CommandController extends MenuBar
+import java.io.IOException;
+
+public class CommandController
 {
     @FXML
-    void initialize()
+    private Label id;
+
+    @FXML
+    private Label time;
+
+    @FXML
+    private ListView<Pane> listview;
+
+    @FXML
+    private Label price;
+
+    void initCommand(Command command) throws IOException
     {
-        setMenu();
+        id.setText("Commande numéro " + command.getId());
+        time.setText(command.getDeliveryDate().toString());
+        addProduct(command);
+        price.setText("Prix total : " + getTotalPrice(command).toString());
+    }
+
+    private Integer getTotalPrice(Command command)
+    {
+        return command.getProducts().stream().map(Product::getPrice).reduce(Integer::sum).orElse(0);
+    }
+
+    private void addProduct(Command command) throws IOException
+    {
+        for (Product product : command.getProducts())
+        {
+            FXMLLoader loader = new FXMLLoader();
+            Pane pane = loader.load(getClass().getResourceAsStream("/fxml/product.fxml"));
+            loader.<ProductController>getController().initProduct(product);
+            listview.getItems().add(pane);
+        }
     }
 }

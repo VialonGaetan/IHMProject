@@ -1,25 +1,31 @@
 package fr.polytech.ihm.controller;
 
+import fr.polytech.ihm.model.product.Product;
 import javafx.fxml.FXML;
-import javafx.scene.control.ListView;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
-public class ProductController extends MenuBar
+public class ProductController
 {
-    @FXML
-    private ResourceBundle resources;
 
     @FXML
-    private URL location;
+    private ImageView image;
 
     @FXML
-    private ListView<?> listView1;
+    private Label name;
 
     @FXML
-    void initialize()
+    private Label description;
+
+    @FXML
+    private Label price;
+
+    void initProduct(Product product)
     {
-        setMenu();
+        image.setImage(new Image(product.getImage()));
+        name.setText(product.getName());
+        description.setText(product.getDescription());
+        price.setText(String.valueOf(product.getPrice()) + " €");
     }
 }

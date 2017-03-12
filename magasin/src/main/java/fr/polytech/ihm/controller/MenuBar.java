@@ -15,16 +15,9 @@ public class MenuBar
     @FXML
     protected Pane menuPane;
 
-    protected void setMenu()
+    void setMenu() throws IOException
     {
-        try
-        {
-            Pane pane = (Pane) new FXMLLoader().load(getClass().getResourceAsStream("/fxml/menu.fxml"));
-            menuPane.getChildren().add(pane);
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
+        Pane pane = new FXMLLoader().load(getClass().getResourceAsStream("/fxml/menu.fxml"));
+        menuPane.getChildren().add(pane);
     }
 }

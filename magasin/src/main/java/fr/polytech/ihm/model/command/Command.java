@@ -1,9 +1,9 @@
 package fr.polytech.ihm.model.command;
 
 import fr.polytech.ihm.model.product.Product;
-import fr.polytech.ihm.model.EnumDay;
 
-import java.util.HashMap;
+import java.util.Date;
+import java.util.List;
 
 /**
  * @author Alexandre Clement
@@ -11,24 +11,29 @@ import java.util.HashMap;
  */
 public class Command
 {
-    private HashMap<Product,Integer> command;
-    private int numcommand;
-    private EnumDay daywhenok;
-    private int hourwhenok;
+    private final List<Product> products;
+    private final Date deliveryDate;
+    private final int id;
 
-    Command(HashMap<Product,Integer> command,int numcommand,int hourwhenok,EnumDay day){
-        this.command = command;
-        this.numcommand = numcommand;
-        this.daywhenok = day;
-        this.hourwhenok = hourwhenok;
+    public Command(int id, List<Product> products, Date deliveryDate)
+    {
+        this.id = id;
+        this.products = products;
+        this.deliveryDate = deliveryDate;
     }
 
+    public int getId()
+    {
+        return id;
+    }
 
-    private HashMap<Product,Integer> getCommand() { return command; }
+    public List<Product> getProducts()
+    {
+        return products;
+    }
 
-    private int getNumcommand() { return numcommand; }
-
-    private EnumDay getDay() { return daywhenok; }
-
-    private int getHourwhenok() { return hourwhenok; }
+    public Date getDeliveryDate()
+    {
+        return deliveryDate;
+    }
 }

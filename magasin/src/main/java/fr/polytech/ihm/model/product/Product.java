@@ -1,28 +1,37 @@
 package fr.polytech.ihm.model.product;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
+public class Product
+{
+    private final String image;
+    private final String name;
+    private final String description;
+    private final int price;
 
-import java.awt.image.BufferedImage;
-
-public class Product {
-    private int prix;
-    private BufferedImage image;
-
-    Product(int prix,BufferedImage image){
-        this.prix = prix;
+    public Product(String image, String name, String description, int price)
+    {
         this.image = image;
+        this.name = name;
+        this.description = description;
+        this.price = price;
     }
 
-    @FXML
-    private ImageView Viewimage;
+    public String getImage()
+    {
+        return image;
+    }
 
-    @FXML
-    private Button Viewacheter;
+    public String getName()
+    {
+        return name;
+    }
 
-    @FXML
-    private Label Viewprix;
+    public String getDescription()
+    {
+        return description;
+    }
 
+    public int getPrice()
+    {
+        return price;
+    }
 }

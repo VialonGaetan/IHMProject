@@ -7,21 +7,12 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 public class MenuController
 {
-    @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
-
     @FXML
     private Button home;
 
@@ -32,44 +23,31 @@ public class MenuController
     private Button command;
 
     @FXML
-    void showCommand(ActionEvent event)
+    void showCommand(ActionEvent event) throws IOException
     {
-        changeView("/fxml/command.fxml", command);
+        changeView("/fxml/command_page.fxml", command, "Les Commandes");
     }
 
     @FXML
-    void showHome(ActionEvent event)
+    void showHome(ActionEvent event) throws IOException
     {
-        changeView("/fxml/home.fxml", home);
+        changeView("/fxml/home.fxml", home, "Acceuil");
     }
 
     @FXML
-    void showProduct(ActionEvent event)
+    void showProduct(ActionEvent event) throws IOException
     {
-        changeView("/fxml/product.fxml", product);
+        changeView("/fxml/product_page.fxml", product, "Nos Produits");
     }
 
-    @FXML
-    void initialize()
-    {
-
-    }
-
-    private void changeView(String fxmlFile, Node node)
+    private void changeView(String fxmlFile, Node node, String title) throws IOException
     {
         Stage stage = (Stage) node.getScene().getWindow();
-        stage.setTitle("To Be or to have");
+        stage.setTitle(title);
         FXMLLoader loader = new FXMLLoader();
-        try
-        {
-            Parent rootNode = loader.load(getClass().getResourceAsStream(fxmlFile));
-            Scene scene = new Scene(rootNode);
-            stage.setScene(scene);
-            stage.show();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
+        Parent rootNode = loader.load(getClass().getResourceAsStream(fxmlFile));
+        Scene scene = new Scene(rootNode);
+        stage.setScene(scene);
+        stage.show();
     }
 }
