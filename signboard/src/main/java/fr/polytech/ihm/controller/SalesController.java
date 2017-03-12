@@ -233,8 +233,8 @@ public class SalesController {
                             Text newPrice = new Text();
                             oldPrice.setText(t.getOldPrice());
                             newPrice.setText(t.getNewPrice());
-                            oldPrice.setTranslateX(55);
-                            newPrice.setTranslateX(60);
+                            oldPrice.setTranslateX(0);
+                            newPrice.setTranslateX(5);
                             oldPrice.setFill(Color.RED);
                             newPrice.setFill(Color.GREEN);
                             newPrice.setStyle("-fx-font-size: 18px ;-fx-font-weight: bold");
@@ -253,12 +253,11 @@ public class SalesController {
 
                             hbox.setAlignment(Pos.CENTER_LEFT);
                             hbox.setPrefHeight(135.0);
-                            hbox.setPrefWidth(1123.0);
+                            hbox.setPrefWidth(1000.0);
 
                             if(t.isVisible()){
                                 setGraphic(hbox);
                             }
-
                         }
                     }
 
