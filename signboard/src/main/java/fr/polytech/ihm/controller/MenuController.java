@@ -1,4 +1,4 @@
-package fr.polytech.ihm;
+package fr.polytech.ihm.controller;
 
 import javafx.event.Event;
 import javafx.fxml.FXML;

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 
-<BorderPane fx:id="mainBorderPane" maxHeight="716.0" maxWidth="1166.0" minHeight="716.0" minWidth="1166.0" prefHeight="716.0" prefWidth="1166.0" BorderPane.alignment="TOP_RIGHT" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.SalesController">
+<BorderPane fx:id="mainBorderPane" maxHeight="716.0" maxWidth="1166.0" minHeight="716.0" minWidth="1166.0" prefHeight="716.0" prefWidth="1166.0" BorderPane.alignment="TOP_RIGHT" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.controller.SalesController">
     <center>
         <ListView fx:id="listView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="1152.0" BorderPane.alignment="CENTER">
             <opaqueInsets>
@@ -21,8 +21,8 @@
             <bottom>
                 <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                     <children>
-                        <Button layoutX="1026.0" layoutY="179.0" mnemonicParsing="false" text="Tri par promotions" onAction="#triPromotion"/>
-                        <Button layoutX="932.0" layoutY="180.0" mnemonicParsing="false" text="Tri par prix" onAction="#triPrix"/>
+                        <Button layoutX="1026.0" layoutY="175.0" mnemonicParsing="false" text="Tri par promotions" onAction="#triPromotion"/>
+                        <Button layoutX="932.0" layoutY="175.0" mnemonicParsing="false" text="Tri par prix" onAction="#triPrix"/>
                         <Label layoutX="60.0" layoutY="103.0" text="Filtre :" />
                         <CheckBox fx:id="filtreLivres" layoutX="56.0" layoutY="143.0" mnemonicParsing="false" onAction="#filtreLivres" text="Livres" />
                         <CheckBox fx:id="filtreDvds" layoutX="153.0" layoutY="141.0" mnemonicParsing="false" onAction="#filtreDvds" text="Dvds" />

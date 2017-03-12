@@ -1,5 +1,6 @@
-package fr.polytech.ihm;
+package fr.polytech.ihm.controller;
 
+import fr.polytech.ihm.model.Item;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;

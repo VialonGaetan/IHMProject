@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="716.0" maxWidth="1166.0" minHeight="716.0" minWidth="1166.0" prefHeight="716.0" BorderPane.alignment="TOP_RIGHT" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="716.0" maxWidth="1166.0" minHeight="716.0" minWidth="1166.0" prefHeight="716.0" BorderPane.alignment="TOP_RIGHT" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <AnchorPane prefHeight="746.0" prefWidth="1272.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="258.0" fitWidth="322.0" layoutX="81.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/photos/magasin.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="241.0" fitWidth="422.0" layoutX="571.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="241.0" fitWidth="422.0" layoutX="50.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/photos/magasin2.jpg" />
                </image>
             </ImageView>
-            <TextArea layoutX="558.0" layoutY="84.0" prefHeight="268.0" prefWidth="394.0" text="Bla bla ...&#10;Notre marque est géniale, ..." />
-            <TextArea layoutX="107.0" layoutY="403.0" prefHeight="218.0" prefWidth="362.0" text="Regardez nous sommes super!&#10;bla bla ..." />
+            <Text layoutX="533.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Textd" wrappingWidth="122.13671875" />
          </children>
       </AnchorPane>
    </center>
