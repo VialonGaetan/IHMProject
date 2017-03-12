@@ -34,7 +34,7 @@
       <Pane fx:id="menuPane" prefHeight="541.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </left>
    <center>
-      <Pagination fx:id="pagination" prefHeight="500.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+      <Pagination fx:id="pagination" onMouseClicked="#view" prefHeight="500.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="50.0" left="50.0" right="50.0" />
          </BorderPane.margin>

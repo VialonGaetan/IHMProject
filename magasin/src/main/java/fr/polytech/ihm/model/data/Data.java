@@ -19,7 +19,7 @@ public class Data
         commands = new HashMap<>();
 
         List<Product> basket0 = new ArrayList<>();
-        basket0.add(ProductEnum.HARRY_POTTER_2.getProduct());
+        basket0.add(ProductEnum.HARRY_POTTER_1.getProduct());
         basket0.add(ProductEnum.HARRY_POTTER_3.getProduct());
         Command command0 = new Command(0, basket0, new Date());
         addCommand(command0);
