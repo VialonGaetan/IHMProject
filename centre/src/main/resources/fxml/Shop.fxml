@@ -1,83 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Rectangle2D?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.SeparatorMenuItem?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1366.0" style="-fx-background-color: #6B6B6B;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.ShopController">
-   <top>
-      <VBox prefHeight="146.0" prefWidth="1366.0" BorderPane.alignment="CENTER">
-         <children>
-            <ImageView fitHeight="138.0" fitWidth="1362.0" pickOnBounds="true" preserveRatio="true">
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-               <image>
-                  <Image url="@images/banner3.png" />
-               </image>
-            </ImageView>
-            <Separator opacity="0.65" prefHeight="9.0" prefWidth="1368.0" style="-fx-background-color: black;">
-               <cursor>
-                  <Cursor fx:constant="DEFAULT" />
-               </cursor>
-            </Separator>
-         </children>
-      </VBox>
-   </top>
-   <left>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
-         <children>
-            <MenuButton alignment="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="75.0" prefWidth="75.0" stylesheets="@styles/MenuBar.css">
-               <items>
-                  <MenuItem mnemonicParsing="false">
-                     <graphic>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Accueil" />
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem mnemonicParsing="false">
-                     <graphic>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Nos magasins" />
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem mnemonicParsing="false">
-                     <graphic>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Renseignements" />
-                     </graphic>
-                  </MenuItem>
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false">
-                     <graphic>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@styles/Button.css" text="Événements" />
-                     </graphic>
-                  </MenuItem>
-               </items>
-            </MenuButton>
-         </children>
-      </VBox>
-   </left>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1366.0" style="-fx-background-color: #6B6B6B;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.controller.ShopController">
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox prefHeight="100.0" prefWidth="200.0" />
-            <TableView fx:id="shopsTab" prefHeight="480.0" prefWidth="1266.0">
-              <columns>
-                <TableColumn fx:id="shop" prefWidth="187.0" text="Magasins" />
-                <TableColumn prefWidth="665.0" text="Description" />
-                  <TableColumn prefWidth="413.0" text="Emplacement" />
-              </columns>
-            </TableView>
+            <ScrollPane prefHeight="572.0" prefWidth="1194.0">
+               <content>
+                  <VBox fx:id="listShopsVBOX" prefHeight="147.0" prefWidth="1188.0">
+                     <children>
+                        <AnchorPane prefHeight="155.0" prefWidth="1194.0">
+                           <children>
+                              <Button fx:id="cat6Button" layoutX="525.0" layoutY="88.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="144.0" text="Button" />
+                              <Button fx:id="cat1Button" layoutX="96.0" layoutY="44.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="144.0" text="Button" />
+                              <Button fx:id="cat3Button" layoutX="240.0" layoutY="88.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="144.0" text="Button" />
+                              <Button fx:id="cat4Button" layoutX="384.0" layoutY="44.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="144.0" text="Button" />
+                              <Button fx:id="cat7Button" layoutX="669.0" layoutY="44.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="144.0" text="Button" />
+                              <Button fx:id="cat9Button" layoutX="813.0" layoutY="88.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="144.0" text="Button" />
+                              <Button fx:id="cat8Button" layoutX="813.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="144.0" text="Button" />
+                              <Button fx:id="cat5Button" layoutX="525.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="144.0" text="Button" />
+                              <Button fx:id="cat2Button" layoutX="240.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="144.0" text="Button" />
+                           </children>
+                        </AnchorPane>
+                        <Separator opacity="0.65" prefHeight="60.0" prefWidth="1368.0" style="-fx-background-color: black;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </Separator>
+                     </children></VBox>
+               </content>
+            </ScrollPane>
          </children>
       </VBox>
    </center>
+   <top>
+      <Pane fx:id="headingPane" prefHeight="146.0" prefWidth="1366.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <Pane fx:id="menuPane" prefHeight="570.0" prefWidth="119.0" BorderPane.alignment="CENTER" />
+   </left>
 </BorderPane>

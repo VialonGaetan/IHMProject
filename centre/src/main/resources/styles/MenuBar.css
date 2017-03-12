@@ -1,5 +1,5 @@
 .menu-button{
-	-fx-background-image:url(../images/MB.png) no-repeat;
+	-fx-background-image:url(../images/MenuBar/MB.png) no-repeat;
 	-fx-background-color:#6B6B6B;
 	-fx-border:none;
 }
