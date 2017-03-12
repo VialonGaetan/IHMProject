@@ -18,6 +18,7 @@ public class MenuController {
     private static final String fxmlFileSale = "/fxml/promotions.fxml";
     private static final String fxmlFileContact = "/fxml/contact.fxml";
     private static final String fxmlFileDescr = "/fxml/descript_enseigne.fxml";
+    private static final String fxmlFileGallery = "/fxml/gallery.fxml";
 
     @FXML
     private VBox menuBar ;
@@ -119,7 +120,7 @@ public class MenuController {
         Node node=(Node) event.getSource();
         Stage stage=(Stage) node.getScene().getWindow();
 
-        FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileDescr));
+        FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileGallery));
         FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
 
