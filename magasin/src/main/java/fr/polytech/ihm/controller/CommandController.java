@@ -19,7 +19,7 @@ public class CommandController
     private Label time;
 
     @FXML
-    private ListView<Pane> listview;
+    private ListView<Pane> listView;
 
     @FXML
     private Label price;
@@ -44,7 +44,7 @@ public class CommandController
             FXMLLoader loader = new FXMLLoader();
             Pane pane = loader.load(getClass().getResourceAsStream("/fxml/product.fxml"));
             loader.<ProductController>getController().initProduct(product);
-            listview.getItems().add(pane);
+            listView.getItems().add(pane);
         }
     }
 }

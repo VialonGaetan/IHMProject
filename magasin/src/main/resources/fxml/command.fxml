@@ -16,7 +16,7 @@
                   <Label fx:id="time" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="50.0" prefWidth="310.0" text="Label" textAlignment="RIGHT" />
                </children>
             </HBox>
-            <ListView fx:id="listview" prefHeight="300.0" prefWidth="620.0" />
+            <ListView fx:id="listView" prefHeight="300.0" prefWidth="620.0" />
             <HBox prefHeight="50.0" prefWidth="200.0">
                <children>
                   <Label fx:id="price" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="50.0" prefWidth="542.0" text="Prix total" />
