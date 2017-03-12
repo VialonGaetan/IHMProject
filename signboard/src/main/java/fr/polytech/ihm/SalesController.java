@@ -2,9 +2,9 @@ package fr.polytech.ihm;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.SortedList;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
-import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.image.Image;
@@ -38,9 +38,71 @@ public class SalesController {
     private boolean isFilteringDvd = false;
     private boolean isFilteringHighTech = false;
 
+    @FXML
+    public void triPromotion(){
+        int compteurItemVisible = 0;
+        boolean tab_en_ordre = false;
+        for(int i = 0 ; i<myObservableList.size() ; i++){
+            if(myObservableList.get(i).isVisible() == true){
+                compteurItemVisible++;
+            }
+        }
+
+        while(!tab_en_ordre){
+            tab_en_ordre = true;
+            for(int i=0 ; i < compteurItemVisible-1 ; i++) {
+                if(Integer.valueOf(myObservableList.get(i).getSrcPromo().substring(17,18)) < Integer.valueOf(myObservableList.get(i+1).getSrcPromo().substring(17,18))) {
+                    Item item = myObservableList.get(i);
+                    myObservableList.remove(i);
+                    myObservableList.add(i+1,item);
+                    tab_en_ordre = false;
+                }
+            }
+            compteurItemVisible--;
+        }
+        listView.setItems(myObservableList);
+        setCellfactory();
+    }
+
+    @FXML
+    public void triPrix(){
+        int compteurItemVisible = 0;
+        boolean tab_en_ordre = false;
+        for(int i = 0 ; i<myObservableList.size() ; i++){
+            if(myObservableList.get(i).isVisible() == true){
+                compteurItemVisible++;
+            }
+        }
+
+        while(!tab_en_ordre){
+            tab_en_ordre = true;
+            for(int i=0 ; i < compteurItemVisible-1 ; i++) {
+                double prix1 = Double.valueOf(myObservableList.get(i).getNewPrice().substring(0,4));
+                double prix2 = Double.valueOf(myObservableList.get(i+1).getNewPrice().substring(0,4));
+                if(prix1 > prix2) {
+                    System.out.println("ici");
+                    Item item = myObservableList.get(i);
+                    myObservableList.remove(i);
+                    myObservableList.add(i+1,item);
+                    tab_en_ordre = false;
+                }
+            }
+            compteurItemVisible--;
+        }
+        listView.setItems(myObservableList);
+        setCellfactory();
+    }
 
     @FXML
     public void initialize() throws IOException {
+        initializeList();
+        listView.setItems(myObservableList);
+        setCellfactory();
+        mainBorderPane.setCenter(listView);
+
+    }
+
+    private void initializeList() throws FileNotFoundException {
         myList = new ArrayList<>();
         String contentOfJSON = new Scanner(new File(System.getProperty("user.dir")+"/signboard/src/main/resources/json/items.json")).useDelimiter("\\Z").next();
         JSONObject jsonObject = new JSONObject(contentOfJSON);
@@ -52,7 +114,81 @@ public class SalesController {
         }
         listView = new ListView<>();
         myObservableList = FXCollections.observableList(myList);
+    }
+
+    @FXML
+    public void filtreLivres() throws FileNotFoundException {
+        if(!isFilteringBook){
+            isFilteringBook = true;
+        }
+        else{
+            isFilteringBook = false;
+        }
+        filtre(isFilteringBook,isFilteringDvd,isFilteringHighTech);
+    }
+
+    @FXML
+    public void filtreDvds(){
+        if(!isFilteringDvd){
+            isFilteringDvd = true;
+        }
+        else{
+            isFilteringDvd = false;
+        }
+        filtre(isFilteringBook,isFilteringDvd,isFilteringHighTech);
+    }
+
+    @FXML
+    public void filtreHighTech(){
+        if(!isFilteringHighTech){
+            isFilteringHighTech = true;
+        }
+        else{
+            isFilteringHighTech = false;
+        }
+        filtre(isFilteringBook,isFilteringDvd,isFilteringHighTech);
+    }
+
+    @FXML void filtre(boolean filtreLivre, boolean filtreDvd, boolean filtreHighTech){
+        if(!filtreLivre && !filtreDvd && !filtreHighTech){
+            displayAll();
+            listView.setItems(myObservableList);
+            setCellfactory();
+            return;
+        }
+        for(int i = 0 ; i<myObservableList.size() ; i++){
+            myObservableList.get(i).setVisible(false);
+            if(filtreLivre){
+                if(myObservableList.get(i).getCategorie().equals("livre")){
+                    myObservableList.get(i).setVisible(true);
+                }
+            }
+            if(filtreDvd){
+                if(myObservableList.get(i).getCategorie().equals("dvd")){
+                    myObservableList.get(i).setVisible(true);
+                }
+            }
+            if(filtreHighTech){
+                if(myObservableList.get(i).getCategorie().equals("highTech")){
+                    myObservableList.get(i).setVisible(true);
+                }
+            }
+        }
+
+        for(int i = 0 ; i<myObservableList.size() ; i++){
+            if(myObservableList.get(i).isVisible()){
+                Item item = myObservableList.get(i);
+                myObservableList.remove(i);
+                myObservableList.add(0,item);
+            }
+        }
+
         listView.setItems(myObservableList);
+        setCellfactory();
+    }
+
+
+    private void setCellfactory(){
         listView.setCellFactory(new Callback<ListView<Item>, ListCell<Item>>(){
             @Override
             public ListCell<Item> call(ListView<Item> p) {
@@ -106,7 +242,6 @@ public class SalesController {
 
                             hbox2.setTranslateX(50.0);
 
-
                             hbox.getChildren().add(imageViewSrc);
                             hbox.getChildren().add(imageViewPromo);
                             hbox2.getChildren().add(labelTitle);
@@ -119,7 +254,11 @@ public class SalesController {
                             hbox.setAlignment(Pos.CENTER_LEFT);
                             hbox.setPrefHeight(135.0);
                             hbox.setPrefWidth(1123.0);
-                            setGraphic(hbox);
+
+                            if(t.isVisible()){
+                                setGraphic(hbox);
+                            }
+
                         }
                     }
 
@@ -127,155 +266,12 @@ public class SalesController {
                 return cell;
             }
         });
-
-        mainBorderPane.setCenter(listView);
-
     }
 
-    @FXML
-    public void displayAll() throws IOException {
-
+    private void displayAll(){
+        for(int i = 0 ; i<myObservableList.size() ; i++){
+            myObservableList.get(i).setVisible(true);
+        }
     }
-
-    @FXML
-    public void filtreLivres(){
-//        workingList = listSales.getItems();
-//        // Checked
-//        if(!isFilteringBook){
-//            setAllNotVisible();
-//            addBook();
-//            isFilteringBook = true;
-//        }
-//        // Uncheched
-//        else{
-//            isFilteringBook = false;
-//            if(allUnchecked())
-//                setAllVisible();
-//            else{
-//                setAllNotVisible();
-//            }
-//        }
-//        if(isFilteringHighTech){
-//            addHighTech();
-//        }
-//        if(isFilteringDvd){
-//            addDvds();
-//        }
-//        displayFirstVisible();
-//        listSales.setItems(workingList);
-    }
-
-    @FXML
-    public void filtreDvds(){
-//        workingList = listSales.getItems();
-//        // Checked
-//        if(!isFilteringDvd){
-//            setAllNotVisible();
-//            addDvds();
-//            isFilteringDvd = true;
-//        }
-//        // Unchecked
-//        else{
-//            isFilteringDvd = false;
-//            if(allUnchecked())
-//                setAllVisible();
-//            else{
-//                setAllNotVisible();
-//            }
-//        }
-//        if(isFilteringBook){
-//            addBook();
-//        }
-//        if(isFilteringHighTech){
-//            addHighTech();
-//        }
-//        displayFirstVisible();
-//        listSales.setItems(workingList);
-    }
-
-    @FXML
-    public void filtreHighTech(){
-//        workingList = listSales.getItems();
-//        // Checked
-//        if(!isFilteringHighTech){
-//            setAllNotVisible();
-//            addHighTech();
-//            isFilteringHighTech = true;
-//        }
-//        // Uncheck
-//        else{
-//            isFilteringHighTech = false;
-//            if(allUnchecked())
-//                setAllVisible();
-//            else{
-//                setAllNotVisible();
-//            }
-//
-//        }
-//        if(isFilteringBook){
-//            addBook();
-//        }
-//        if(isFilteringDvd){
-//            addDvds();
-//        }
-//        displayFirstVisible();
-//        listSales.setItems(workingList);
-    }
-
-    private void addBook() {
-//        for(int i = 0 ; i<workingList.size() ; i++){
-//            if(workingList.get(i).getId().contains("livre")){
-//                workingList.get(i).setVisible(true);
-//            }
-//        }
-    }
-
-    private void addDvds() {
-//        for(int i = 0 ; i<workingList.size() ; i++){
-//            if(workingList.get(i).getId().contains("dvd")){
-//                workingList.get(i).setVisible(true);
-//            }
-//        }
-    }
-
-    private void addHighTech() {
-//        for(int i = 0 ; i<workingList.size() ; i++){
-//            if(workingList.get(i).getId().contains("highTech")){
-//                workingList.get(i).setVisible(true);
-//            }
-//        }
-    }
-
-    private void displayFirstVisible(){
-//        // tri pour afficher d'abord les visible
-//        for(int j = 0 ; j<listSales.getItems().size() ; j++){
-//            for(int i = 0 ; i<listSales.getItems().size() ; i++){
-//                if(!workingList.get(i).isVisible()){
-//                    HBox remove = workingList.get(i);
-//                    workingList.remove(i);
-//                    workingList.add(remove);
-//                }
-//            }
-//        }
-    }
-
-    private void setAllNotVisible(){
-//        for(int i = 0 ; i<workingList.size() ; i++){
-//            workingList.get(i).setVisible(false);
-//        }
-    }
-
-    private void setAllVisible(){
-//        for(int i = 0 ; i<workingList.size() ; i++){
-//            workingList.get(i).setVisible(true);
-//        }
-    }
-
-//    private boolean allUnchecked(){
-////        if(!isFilteringBook && !isFilteringDvd && !isFilteringHighTech)
-////            return true;
-////        return false;
-//    }
-
 
 }

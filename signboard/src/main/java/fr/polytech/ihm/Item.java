@@ -12,6 +12,7 @@ public class Item {
     private StringProperty oldPrice;
     private StringProperty newPrice;
     private StringProperty categorie;
+    private boolean visible;
 
     public Item(String srcImage, String srcPromo, String labelTitle, String labelDescri, String oldPrice, String  newPrice, String categorie){
         this.srcImage = new SimpleStringProperty(srcImage);
@@ -21,6 +22,7 @@ public class Item {
         this.oldPrice = new SimpleStringProperty(oldPrice);
         this.newPrice = new SimpleStringProperty(newPrice);
         this.categorie = new SimpleStringProperty(categorie);
+        this.visible = true;
 
     }
 
@@ -79,4 +81,14 @@ public class Item {
     public StringProperty categorieProperty() {
         return categorie;
     }
+
+    public void setVisible(boolean b){
+        visible = b;
+    }
+
+    public boolean isVisible(){
+        return visible;
+    }
+
+
 }
