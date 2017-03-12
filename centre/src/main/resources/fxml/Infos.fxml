@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.controller.InfosController">
+   <center>
+      <GoogleMapView fx:id="googleMapView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <Pane fx:id="headingPane" prefHeight="146.0" prefWidth="1366.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <Pane fx:id="menuPane" prefHeight="572.0" prefWidth="119.0" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <HBox fx:id="infosHBOX" prefHeight="100.0" prefWidth="1366.0" BorderPane.alignment="BOTTOM_CENTER">
+      </HBox>
+   </bottom>
+</BorderPane>

@@ -1,14 +1,15 @@
-package fr.polytech.ihm;
+package fr.polytech.ihm.model;
 
 public enum Categorie {
 
     ModeFemme,
     ModeEnfant,
     ModeHomme,
-    Jardin,
-    Deco,
-    Cadeaux,
+    Sport,
+    Jeux,
+    Beauté,
+    Culture,
     Restauration,
-    Jeux;
+    Maison;
 
 }
