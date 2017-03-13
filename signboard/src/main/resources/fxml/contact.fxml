@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<?import com.lynden.gmapsfx.GoogleMapView?>
 <BorderPane maxWidth="1166.0" minHeight="716.0" minWidth="1166.0" prefHeight="716.0" prefWidth="1166.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.controller.ContactController">
    <bottom>
       <AnchorPane prefHeight="240.0" prefWidth="1166.0" BorderPane.alignment="CENTER">
@@ -50,7 +49,6 @@
                   <Image url="@../images/photos/map.png" />
                </image>
             </ImageView>
-            <GoogleMapView fx:id="googleMapView" prefHeight="500.0" prefWidth="1000.0" BorderPane.alignment="CENTER" />
             <Button fx:id="1" layoutX="528.0" layoutY="181.0" mnemonicParsing="false" onAction="#afficherMagasin" prefHeight="25.0" prefWidth="124.0" styleClass="boutonMap" visible="true">
                <cursor>
                   <Cursor fx:constant="HAND" />

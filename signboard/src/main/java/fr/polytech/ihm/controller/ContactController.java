@@ -36,11 +36,6 @@ public class ContactController {
     private Label tel;
 
     @FXML
-    private GoogleMapView googleMapView;
-
-    private GoogleMap map;
-
-    @FXML
     public void initialize() throws FileNotFoundException {
         initializeListMagasin();
         nom.setText(listMagasins.get(0).getNom());
@@ -48,7 +43,6 @@ public class ContactController {
         horaire.setText(listMagasins.get(0).getHoraire());
         email.setText(listMagasins.get(0).getEmail());
         tel.setText(listMagasins.get(0).getTel());
-        googleMapView.addMapInializedListener(() -> configureMap());
 
     }
 
@@ -73,28 +67,5 @@ public class ContactController {
         horaire.setText(listMagasins.get(idButton).getHoraire());
         email.setText(listMagasins.get(idButton).getEmail());
         tel.setText(listMagasins.get(idButton).getTel());
-    }
-
-    protected void configureMap() {
-        MapOptions mapOptions = new MapOptions();
-
-        mapOptions.center(new LatLong(48.857350, 2.322922)).overviewMapControl(false)
-                .panControl(false)
-                .rotateControl(false)
-                .scaleControl(false)
-                .streetViewControl(false)
-                .zoomControl(false)
-                .zoom(13);
-
-        map = googleMapView.createMap(mapOptions);
-
-//        MarkerOptions markerOptions = new MarkerOptions();
-//        LatLong markerLatLong = new LatLong(43.617849, 7.075260);
-//        markerOptions.position(markerLatLong)
-//                .title("Cap Sophia")
-//                .animation(Animation.BOUNCE)
-//                .visible(true);
-//        final Marker myMarker = new Marker(markerOptions);
-//        map.addMarker(myMarker);
     }
 }
