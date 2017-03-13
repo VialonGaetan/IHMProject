@@ -17,7 +17,8 @@ public class MenuBar
 
     void setMenu() throws IOException
     {
-        Pane pane = new FXMLLoader().load(getClass().getResourceAsStream("/fxml/menu.fxml"));
+        FXMLLoader loader = new FXMLLoader();
+        Pane pane = loader.load(getClass().getResourceAsStream("/fxml/menu.fxml"));
         menuPane.getChildren().add(pane);
     }
 }

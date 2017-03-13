@@ -6,6 +6,18 @@ package fr.polytech.ihm.model.language;
  */
 public enum LanguageEnum
 {
-    FR,
-    ENG
+    FR("images/langues/france3.jpg"),
+    ENG("images/langues/drapeau-royaume-uni3.jpg");
+
+    private final String image;
+
+    LanguageEnum(String image)
+    {
+        this.image = image;
+    }
+
+    public String getImage()
+    {
+        return image;
+    }
 }

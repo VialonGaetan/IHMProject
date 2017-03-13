@@ -1,5 +1,6 @@
 package fr.polytech.ihm.controller;
 
+import fr.polytech.ihm.model.language.LanguageEnum;
 import fr.polytech.ihm.model.product.Product;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -15,6 +16,11 @@ import java.io.IOException;
  */
 public interface Display
 {
+    default <T> T display(ViewEnum view, Node node, LanguageEnum language) throws IOException
+    {
+        return display(view.getFxml(), node, view.get(language));
+    }
+
     default <T> T display(String fxmlFile, Node node, String title) throws IOException
     {
         Stage stage = (Stage) node.getScene().getWindow();

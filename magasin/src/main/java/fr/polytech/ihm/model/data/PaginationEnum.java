@@ -8,7 +8,7 @@ import fr.polytech.ihm.model.product.Product;
  */
 public enum PaginationEnum
 {
-    HARRY_POTTER("images/harry-potter-et-les-reliques-de-la-mort-partie-2-banniere.jpg"),
+    HARRY_POTTER("images/harry-potter-et-les-reliques-de-la-mort-partie-2-banniere.jpg", ProductEnum.HARRY_POTTER_1.getProduct()),
     LIBRARY("images/home_presentation_image.jpg"),
     HARRY_POTTER_7("images/harry-potter-the-deathly-hallows-part-2-wallpaper1.jpg", ProductEnum.HARRY_POTTER_7_PART_2.getProduct());
 

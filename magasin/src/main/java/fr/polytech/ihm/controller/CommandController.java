@@ -29,12 +29,12 @@ public class CommandController
         id.setText("Commande numéro " + command.getId());
         time.setText(command.getDeliveryDate().toString());
         addProduct(command);
-        price.setText("Prix total : " + getTotalPrice(command).toString());
+        price.setText("Prix total : " + getTotalPrice(command).toString() + " €");
     }
 
-    private Integer getTotalPrice(Command command)
+    private Double getTotalPrice(Command command)
     {
-        return command.getProducts().stream().map(Product::getPrice).reduce(Integer::sum).orElse(0);
+        return command.getProducts().stream().map(Product::getPrice).reduce(Double::sum).orElse(0d);
     }
 
     private void addProduct(Command command) throws IOException

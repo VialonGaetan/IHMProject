@@ -5,11 +5,11 @@ public class Product
     private final String image;
     private final String name;
     private final String description;
-    private final int price;
+    private final double price;
     private final double avis;
     private final ProductType productType;
 
-    public Product(String image, String name, String description, int price, double avis, ProductType productType)
+    public Product(String image, String name, String description, double price, double avis, ProductType productType)
     {
         this.image = image;
         this.name = name;
@@ -34,7 +34,7 @@ public class Product
         return description;
     }
 
-    public int getPrice()
+    public double getPrice()
     {
         return price;
     }

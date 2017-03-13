@@ -9,18 +9,24 @@ import fr.polytech.ihm.model.language.LanguageEnum;
  */
 public enum ViewEnum implements Language
 {
-    HOME("Acceuil", "Home"),
-    PRODUCT("Nos Produits", "Product"),
-    COMMAND("Les Commandes", "Command");
+    HOME("/fxml/home.fxml", "Acceuil", "Home"),
+    PRODUCT("/fxml/product_page.fxml", "Nos Produits", "Product"),
+    COMMAND("/fxml/command_page.fxml", "Les Commandes", "Command");
 
 
+    private final String fxml;
     private final String[] languages;
 
-    ViewEnum(String... languages)
+    ViewEnum(String fxml, String... languages)
     {
+        this.fxml = fxml;
         this.languages = languages;
     }
 
+    public String getFxml()
+    {
+        return fxml;
+    }
 
     @Override
     public String get(LanguageEnum language)

@@ -12,7 +12,8 @@ public enum ProductType implements Language
     BOOK("Livre", "Book"),
     CD("CD", "CD"),
     DVD("DVD", "DVD"),
-    STAGE("Stages", "Stages");
+    STAGE("Stages", "Stages"),
+    HIGH_TECH("highTech", "highTech");
 
     private final String[] languages;
 
@@ -27,7 +28,7 @@ public enum ProductType implements Language
         {
             for (String language : productType.languages)
             {
-                if (language.equals(string))
+                if (language.equalsIgnoreCase(string))
                     return productType;
             }
         }

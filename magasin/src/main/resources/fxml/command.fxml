@@ -6,20 +6,20 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.controller.CommandController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.controller.CommandController">
    <children>
-      <VBox prefHeight="400.0" prefWidth="620.0">
+      <VBox prefHeight="400.0" prefWidth="700.0">
          <children>
             <HBox prefHeight="50.0" prefWidth="200.0">
                <children>
-                  <Label fx:id="id" prefHeight="50.0" prefWidth="310.0" text="Label" />
-                  <Label fx:id="time" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="50.0" prefWidth="310.0" text="Label" textAlignment="RIGHT" />
+                  <Label fx:id="id" prefHeight="50.0" prefWidth="350.0" text="Label" />
+                  <Label fx:id="time" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="50.0" prefWidth="350.0" text="Label" textAlignment="RIGHT" />
                </children>
             </HBox>
-            <ListView fx:id="listView" prefHeight="300.0" prefWidth="620.0" />
+            <ListView fx:id="listView" prefHeight="300.0" prefWidth="700.0" />
             <HBox prefHeight="50.0" prefWidth="200.0">
                <children>
-                  <Label fx:id="price" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="50.0" prefWidth="542.0" text="Prix total" />
+                  <Label fx:id="price" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="50.0" prefWidth="600.0" text="Prix total" />
                </children>
             </HBox>
          </children>

@@ -1,6 +1,6 @@
 package fr.polytech.ihm.controller;
 
-import fr.polytech.ihm.model.data.ProductEnum;
+import fr.polytech.ihm.model.data.Data;
 import fr.polytech.ihm.model.product.Product;
 import fr.polytech.ihm.model.product.ProductType;
 import javafx.event.ActionEvent;
@@ -81,19 +81,18 @@ public class ProductPageController extends MenuBar
                 .map(ProductType::productTypeOf)
                 .allMatch(Predicate.isEqual(product.getProductType())));
         predicate = predicate.and(product -> product.getName().toLowerCase().contains(name.getText().toLowerCase()));
-
-        for (ProductEnum product : ProductEnum.values())
+        for (Product product : Data.getInstance().getProducts())
         {
-            if (predicate.test(product.getProduct()))
+            if (predicate.test(product))
                 addProduct(product);
         }
     }
 
-    private void addProduct(ProductEnum product) throws IOException
+    private void addProduct(Product product) throws IOException
     {
         FXMLLoader loader = new FXMLLoader();
         Pane pane = loader.load(getClass().getResourceAsStream("/fxml/product.fxml"));
-        loader.<ProductController>getController().initProduct(product.getProduct());
+        loader.<ProductController>getController().initProduct(product);
         listView.getItems().add(pane);
     }
 

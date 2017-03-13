@@ -21,18 +21,18 @@ public class MenuController implements Display
     @FXML
     void showCommand(ActionEvent event) throws IOException
     {
-        display("/fxml/command_page.fxml", command, ViewEnum.COMMAND.get(LanguageEnum.FR));
+        display(ViewEnum.COMMAND, command, LanguageEnum.FR);
     }
 
     @FXML
     void showHome(ActionEvent event) throws IOException
     {
-        display("/fxml/home.fxml", home, ViewEnum.HOME.get(LanguageEnum.FR));
+        display(ViewEnum.HOME, home, LanguageEnum.FR);
     }
 
     @FXML
     void showProduct(ActionEvent event) throws IOException
     {
-        display("/fxml/product_page.fxml", product, ViewEnum.PRODUCT.get(LanguageEnum.FR));
+        display(ViewEnum.PRODUCT, product, LanguageEnum.FR);
     }
 }
