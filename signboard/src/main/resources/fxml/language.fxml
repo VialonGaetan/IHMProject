@@ -13,7 +13,7 @@
             <items>
                 <MenuItem fx:id="french" mnemonicParsing="false" onAction="#changeLanguage">
                     <graphic>
-                        <ImageView fitHeight="57.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="57.0" fitWidth="91.0">
                             <image>
                                 <Image url="images/langues/drapeauFrance.png" />
                             </image>
@@ -25,7 +25,7 @@
                 </MenuItem>
                 <MenuItem fx:id="english" mnemonicParsing="false" onAction="#changeLanguage">
                     <graphic>
-                        <ImageView fitHeight="57.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="57.0" fitWidth="91.0">
                             <image>
                                 <Image url="images/langues/drapeauRU.jpg" />
                             </image>
