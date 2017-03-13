@@ -1,7 +1,5 @@
 package fr.polytech.ihm.controller;
 
-import com.lynden.gmapsfx.GoogleMapView;
-import com.lynden.gmapsfx.javascript.object.*;
 import fr.polytech.ihm.model.Magasin;
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -9,7 +7,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
