@@ -15,7 +15,7 @@
                     <graphic>
                         <ImageView fitHeight="57.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/langues/france3.jpg" />
+                                <Image url="images/langues/drapeauFrance.png" />
                             </image>
                             <cursor>
                                 <Cursor fx:constant="HAND" />
@@ -27,7 +27,7 @@
                     <graphic>
                         <ImageView fitHeight="57.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/langues/drapeau-royaume-uni3.jpg" />
+                                <Image url="images/langues/drapeauRU.jpg" />
                             </image>
                             <cursor>
                                 <Cursor fx:constant="HAND" />
