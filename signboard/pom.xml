@@ -117,6 +117,11 @@
             <artifactId>GMapsFX</artifactId>
             <version>2.10.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.lynden</groupId>
+            <artifactId>GMapsFX</artifactId>
+            <version>RELEASE</version>
+        </dependency>
     </dependencies>
 
 </project>

@@ -2,14 +2,11 @@ package fr.polytech.ihm.controller;
 
 import com.lynden.gmapsfx.GoogleMapView;
 import com.lynden.gmapsfx.javascript.object.*;
-import fr.polytech.ihm.model.Item;
 import fr.polytech.ihm.model.Magasin;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Control;
 import javafx.scene.control.Label;
-import javafx.scene.input.MouseEvent;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -81,18 +78,23 @@ public class ContactController {
     protected void configureMap() {
         MapOptions mapOptions = new MapOptions();
 
-        mapOptions.center(new LatLong(43.615564, 7.071918))
-                .mapType(MapTypeIdEnum.ROADMAP)
-                .zoom(15);
-        map = googleMapView.createMap(mapOptions, false);
+        mapOptions.center(new LatLong(48.857350, 2.322922)).overviewMapControl(false)
+                .panControl(false)
+                .rotateControl(false)
+                .scaleControl(false)
+                .streetViewControl(false)
+                .zoomControl(false)
+                .zoom(13);
 
-        MarkerOptions markerOptions = new MarkerOptions();
-        LatLong markerLatLong = new LatLong(43.617849, 7.075260);
-        markerOptions.position(markerLatLong)
-                .title("Cap Sophia")
-                .animation(Animation.BOUNCE)
-                .visible(true);
-        final Marker myMarker = new Marker(markerOptions);
-        map.addMarker(myMarker);
+        map = googleMapView.createMap(mapOptions);
+
+//        MarkerOptions markerOptions = new MarkerOptions();
+//        LatLong markerLatLong = new LatLong(43.617849, 7.075260);
+//        markerOptions.position(markerLatLong)
+//                .title("Cap Sophia")
+//                .animation(Animation.BOUNCE)
+//                .visible(true);
+//        final Marker myMarker = new Marker(markerOptions);
+//        map.addMarker(myMarker);
     }
 }
