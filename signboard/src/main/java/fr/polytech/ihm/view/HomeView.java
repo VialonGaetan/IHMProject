@@ -1,4 +1,4 @@
-package fr.polytech.ihm;
+package fr.polytech.ihm.view;
 
 import de.codecentric.centerdevice.javafxsvg.SvgImageLoaderFactory;
 import javafx.application.Application;

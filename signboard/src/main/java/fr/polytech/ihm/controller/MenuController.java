@@ -4,7 +4,11 @@ import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -98,12 +102,12 @@ public class MenuController {
         Node node=(Node) event.getSource();
         Stage stage=(Stage) node.getScene().getWindow();
 
-        FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileDescr));
+        FXMLLoader descriLoader = new FXMLLoader(getClass().getResource(fxmlFileDescr));
         FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
 
         BorderPane root = new BorderPane();
-        root.setCenter(homeLoader.load());
+        root.setCenter(descriLoader.load());
         root.setTop(langueLoader.load());
         root.setLeft(menuLoader.load());
 
