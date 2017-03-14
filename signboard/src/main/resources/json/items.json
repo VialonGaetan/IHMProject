@@ -2,11 +2,11 @@
   "liste": [
     {
       "srcImage": "images/articles/livre.jpg",
-      "srcPromo": "images/promotion/60.png",
+      "srcPromo": "images/promotion/50.png",
       "labelTitle" : "L'Horizon à l'envers",
       "labelDescri" : "Marc Lévy",
       "oldPrice" : "24.90 €",
-      "newPrice" : "9.90 €",
+      "newPrice" : "12.45 €",
       "categorie" : "livre"
     },
     {

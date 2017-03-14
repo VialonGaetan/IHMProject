@@ -38,7 +38,7 @@
     {
       "nom": "Magasin Paris Saint Lazare",
       "adresse": "25 Avenue de la République, 75010 Paris",
-      "horaire" : "Horaires d'ouverture : 8h - 20h",
+      "horaire" : "Horaires d'ouverture : 8h - 21h",
       "tel" : "04.78.65.21.50",
       "email" : "client@tobeortohave.com"
     },
@@ -59,7 +59,7 @@
     {
       "nom": "Magasin Paris Gare de Lyon",
       "adresse": "48 Place du palais, 75010 Paris",
-      "horaire" : "Horaires d'ouverture : 8h - 12h",
+      "horaire" : "Horaires d'ouverture : Fermé",
       "tel" : "04.92.58.42.10",
       "email" : "client@tobeortohave.com"
     }]

@@ -33,7 +33,7 @@ public class DescriController {
         xAxis.setUpperBound(2016);
         xAxis.setTickUnit(1);
 
-        chartSales.setTitle("CA en France");
+        chartSales.setTitle("Chiffre d'affaires en France");
         XYChart.Series<Number, Number> series = new XYChart.Series<>();
         series.setName("Millions d'€");
 
