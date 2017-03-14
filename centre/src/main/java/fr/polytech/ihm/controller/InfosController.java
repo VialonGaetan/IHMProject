@@ -2,6 +2,7 @@ package fr.polytech.ihm.controller;
 
 import com.lynden.gmapsfx.GoogleMapView;
 import com.lynden.gmapsfx.javascript.object.*;
+import fr.polytech.ihm.MainApp;
 import javafx.fxml.FXML;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
@@ -13,6 +14,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
+import java.util.ResourceBundle;
 
 /**
  * @author Gaetan Vialon
@@ -45,7 +47,7 @@ public class InfosController extends Menu {
     protected void configureMap() {
         MapOptions mapOptions = new MapOptions();
 
-        mapOptions.center(new LatLong(43.615564, 7.071918))
+        mapOptions.center(new LatLong(43.61556, 7.071918))
                 .mapType(MapTypeIdEnum.ROADMAP)
                 .zoom(15);
         map = googleMapView.createMap(mapOptions, false);
@@ -61,14 +63,26 @@ public class InfosController extends Menu {
     }
 
     protected void setBotPane() {
+        infosHBOX.getStyleClass().add("botPane");
         Separator separator = new Separator();
         separator.orientationProperty().setValue(Orientation.VERTICAL);
-        infosHBOX.getChildren().add(new VBox(new Label(" Suivez Nous !!"),
+
+
+        Label title = new Label(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("follow"));
+        title.getStyleClass().add("title");
+        infosHBOX.getChildren().add(new VBox(title,
                 new HBox(new ImageView("/images/Infos/twitter.png"), new Hyperlink(" Twitter @CapSophia")),
                 new HBox(new ImageView("/images/Infos/facebook.png"), new Hyperlink(" Facebook CapSophia"))));
+
+
         infosHBOX.getChildren().add(separator);
-        infosHBOX.getChildren().add(new Label("Bonjour"));
+
+
+        title = new Label(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("open"));
+        title.getStyleClass().add("title");
+        infosHBOX.getChildren().add(new VBox(title,
+                new Label(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("schedule"))));
         infosHBOX.alignmentProperty().setValue(Pos.CENTER);
     }
-}
 
+}

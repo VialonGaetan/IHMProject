@@ -1,3 +1,53 @@
+.borderPane{
+    -fx-background-color: #6B6B6B;
+}
 .root {
-    -fx-background-color:#6B6B6B;
+    -fx-background-color: #6B6B6B;
+}
+.menuButton {
+  -fx-display: inline-block;
+  -fx-background-image:url(/images/MenuBar/button.png);
+  -fx-background-color:#6B6B6B;
+  -fx-border-radius: 10px;
+  -fx-border: none;
+  -fx-text-fill : black;
+  -fx-text-align: center;
+  -fx-font-size: 20px;
+  -fx-padding: 20px;
+  -fx-cursor: pointer;
+}
+
+.title{
+	-fx-font-size: 17px;
+    -fx-text-fill: green;
+    -fx-font-weight: bold;
+}
+
+.menu-button{
+	-fx-background-image:url(/images/MenuBar/MB.png) no-repeat;
+	-fx-background-color:none;
+	-fx-border:none;
+}
+
+.menu-button > .arrow-button {
+    -fx-padding: 0;
+}
+
+.menu-button > .arrow-button > .arrow {
+    -fx-padding: 0;
+}
+
+.botPane{
+    -fx-background-color: #ABABAB;
+}
+
+.frenchButton{
+    -fx-background-image:url(/images/MenuBar/france.png) no-repeat;
+    -fx-background-color:none;
+    -fx-border:none;
+}
+.englishButton{
+    -fx-background-image:url(/images/MenuBar/angleterre.jpg);
+    -fx-background-color:none;
+    -fx-border:none;
 }

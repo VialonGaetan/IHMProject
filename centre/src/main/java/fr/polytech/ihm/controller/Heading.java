@@ -15,16 +15,8 @@ public class Heading {
     @FXML
     protected Pane headingPane;
 
-    protected void setHeading()
-    {
-        try
-        {
-            Pane pane = (Pane) new FXMLLoader().load(getClass().getResourceAsStream("/fxml/heading.fxml"));
-            headingPane.getChildren().add(pane);
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
+    protected void setHeading() throws IOException {
+        Pane pane = (Pane) new FXMLLoader().load(getClass().getResourceAsStream("/fxml/heading.fxml"));
+        headingPane.getChildren().add(pane);
     }
 }

@@ -1,36 +1,36 @@
-package fr.polytech.ihm.model;
+package fr.polytech.ihm.model.shop;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 public class Magasin {
 
-    private Categorie categorie;
+    private List<Categorie> categorie;
     private String description;
     private String image;
-    private String[] produitsPhares;
-    private StringProperty site;
-    private StringProperty emplacement;
+    private List<String> produitsPhares;
+    private String site;
+    private String emplacement;
     private String name;
 
     public Magasin(){}
 
-    public Magasin(String name,Categorie type, String description, String imagePath, String[] produitPhare, String site, String place) throws IOException {
-        this.categorie = type;
+    public Magasin(String name, String description, String imagePath, List<String> produitPhare, String site, String place, Categorie... type){
+        this.categorie = Arrays.asList(type);
         this.name =name;
         this.description = description;
         this.image = imagePath;
         this.produitsPhares = produitPhare;
-        this.site = new SimpleStringProperty(site);
-        emplacement = new SimpleStringProperty(place);
+        this.site = site;
+        emplacement = place;
     }
 
 
-    public Categorie getCategorie() {
+    public List<Categorie> getCategorie() {
         return categorie;
     }
 
@@ -42,15 +42,15 @@ public class Magasin {
         return image;
     }
 
-    public String[] getProduitsPhares() {
+    public List<String> getProduitsPhares() {
         return produitsPhares;
     }
 
-    public StringProperty getSite() {
+    public String getSite() {
         return site;
     }
 
-    public StringProperty getEmplacement() {
+    public String getEmplacement() {
         return emplacement;
     }
 

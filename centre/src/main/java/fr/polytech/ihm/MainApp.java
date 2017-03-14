@@ -7,8 +7,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import com.aquafx_project.AquaFx;
+
+import java.util.Locale;
 
 public class MainApp extends Application {
+
+    public static Locale language = Locale.ENGLISH;
 
     private static final Logger log = LoggerFactory.getLogger(MainApp.class);
 
@@ -18,19 +23,13 @@ public class MainApp extends Application {
 
     public void start(Stage stage) throws Exception {
 
-        log.info("Starting Hello JavaFX and Maven demonstration application");
-
-
-        String fxmlFile = "/fxml/Shop.fxml";
-        log.debug("Loading FXML for main view from: {}", fxmlFile);
+        String fxmlFile = "/fxml/MainPage.fxml";
         FXMLLoader loader = new FXMLLoader();
         Parent rootNode = (Parent) loader.load(getClass().getResourceAsStream(fxmlFile));
 
-        log.debug("Showing JFX scene");
         Scene scene = new Scene(rootNode, 1366, 716);
         scene.getStylesheets().add("/styles/Main.css");
-
-        stage.setTitle("Hello JavaFX and Maven");
+        stage.setTitle("Cap Sophia");
         stage.setScene(scene);
         stage.show();
     }
