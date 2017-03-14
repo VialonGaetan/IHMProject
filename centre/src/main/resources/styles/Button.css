@@ -1,13 +1,14 @@
-.button {
+.menuButton {
   -fx-display: inline-block;
-  -fx-background-image:url(../images/MenuBar/button2b.png);
+  -fx-background-image:url(/images/MenuBar/button.png);
   -fx-background-color:#6B6B6B;
   -fx-border-radius: 10px;
   -fx-border: none;
-  -fx-color: #6B6B6B;
+  -fx-text-fill : black;
   -fx-text-align: center;
   -fx-font-size: 20px;
   -fx-padding: 20px;
   -fx-cursor: pointer;
 }
-
+.buttonPromo{
+}

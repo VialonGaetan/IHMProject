@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1366.0" stylesheets="@../styles/Main.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.controller.HomeController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.controller.HomeController">
    <center>
       <ImageView fitHeight="446.0" fitWidth="1039.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_CENTER">
          <image>
-            <Image url="@images/CentreCommercial.jpg" />
+            <Image url="@/images/CentreCommercial.jpg" />
          </image>
          <BorderPane.margin>
             <Insets top="60.0" />
@@ -38,7 +38,7 @@
             </HBox>
             <ImageView fitHeight="464.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/bannerRight.png" />
+                  <Image url="@/images/bannerRight.png" />
                </image>
                <VBox.margin>
                   <Insets right="5.0" top="10.0" />

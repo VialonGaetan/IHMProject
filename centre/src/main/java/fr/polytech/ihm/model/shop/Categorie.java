@@ -1,4 +1,4 @@
-package fr.polytech.ihm.model;
+package fr.polytech.ihm.model.shop;
 
 public enum Categorie {
 

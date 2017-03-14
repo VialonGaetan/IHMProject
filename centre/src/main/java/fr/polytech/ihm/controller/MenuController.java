@@ -1,9 +1,10 @@
 package fr.polytech.ihm.controller;
 
+import fr.polytech.ihm.MainApp;
+import fr.polytech.ihm.model.data.ShopList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -11,6 +12,8 @@ import javafx.scene.control.MenuButton;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 /**
  * @author Gaetan Vialon
@@ -35,43 +38,58 @@ public class MenuController {
     private Button eventButton;
 
     @FXML
-    private void handleButtonClick(ActionEvent event) {
+    private Button englishButton;
+
+    @FXML
+    private Button frenchButton;
+
+
+    @FXML
+    private void handleButtonClick(ActionEvent event) throws IOException {
         String fxmlFile = "";
+
         if (event.getSource() == homeButton) {
             fxmlFile = "/fxml/MainPage.fxml";
-            System.out.println("salut");
         }
         if (event.getSource().equals(shopButton)) {
             fxmlFile = "/fxml/Shop.fxml";
-            System.out.println("salut");
         }
         if (event.getSource() == infosButton) {
             fxmlFile = "/fxml/Infos.fxml";
-            System.out.println("salut");
         }
         if (event.getSource() == eventButton) {
             fxmlFile = "/fxml/Events.fxml";
-            System.out.println("salut");
         }
         changeView(fxmlFile);
     }
 
-    private void changeView(String fxmlFile)
-    {
+    @FXML
+    private void changeLanguageButtonClick(ActionEvent event) throws IOException {
+        if (event.getSource() == frenchButton)
+            MainApp.language = Locale.FRENCH;
+        else
+            MainApp.language = Locale.ENGLISH;
+        changeView("/fxml/MainPage.fxml");
+    }
+
+    @FXML
+    private void initialize() {
+        homeButton.textProperty().setValue(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("accueil"));
+        shopButton.textProperty().setValue(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("shop"));
+        infosButton.textProperty().setValue(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("info"));
+        eventButton.textProperty().setValue(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("event"));
+    }
+
+    private void changeView(String fxmlFile) throws IOException {
         Stage stage = (Stage) listButton.getScene().getWindow();
         stage.setTitle("Cap Sophia");
         FXMLLoader loader = new FXMLLoader();
-        try
-        {
-            Parent rootNode = loader.load(getClass().getResourceAsStream(fxmlFile));
-            Scene scene = new Scene(rootNode);
-            scene.getStylesheets().add("/styles/Main.css");
-            stage.setScene(scene);
-            stage.show();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
+        Parent rootNode = loader.load(getClass().getResourceAsStream(fxmlFile));
+        if (fxmlFile.equals("/fxml/Shop.fxml"))
+            ((ShopController) loader.getController()).printShop(new ShopList().getShopList());
+        Scene scene = new Scene(rootNode);
+        scene.getStylesheets().add("/styles/Main.css");
+        stage.setScene(scene);
+        stage.show();
     }
 }
