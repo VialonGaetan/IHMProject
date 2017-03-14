@@ -135,7 +135,7 @@ public class MenuController {
 
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/styles.css");
-        //scene.getStylesheets().add("");
+        scene.getStylesheets().add("/styles/styleButtonGallery.css");
         stage.setScene(scene);
         stage.show();
     }
