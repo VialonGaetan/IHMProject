@@ -18,7 +18,6 @@ public class MenuController {
 
     private static final String fxmlFileHome = "/fxml/home.fxml";
     private static final String fxmlFileMenu = "/fxml/menu.fxml";
-    private static final String fxmlFileLanguage = "/fxml/language.fxml";
     private static final String fxmlFileSale = "/fxml/promotions.fxml";
     private static final String fxmlFileContact = "/fxml/contact.fxml";
     private static final String fxmlFileDescr = "/fxml/descript_enseigne.fxml";
@@ -34,13 +33,11 @@ public class MenuController {
         Stage stage=(Stage) node.getScene().getWindow();
 
         FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileHome));
-        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
 
         BorderPane root = new BorderPane();
-        root.setCenter((Node) homeLoader.load());
-        root.setTop((Node) langueLoader.load());
-        root.setLeft((Node) menuLoader.load());
+        root.setCenter(homeLoader.load());
+        root.setLeft(menuLoader.load());
 
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/styles.css");
@@ -57,12 +54,10 @@ public class MenuController {
         Stage stage=(Stage) node.getScene().getWindow();
 
         FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileSale));
-        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
 
         BorderPane root = new BorderPane();
         root.setCenter(homeLoader.load());
-        root.setTop(langueLoader.load());
         root.setLeft(menuLoader.load());
 
         Scene scene = new Scene(root);
@@ -81,12 +76,10 @@ public class MenuController {
         Stage stage=(Stage) node.getScene().getWindow();
 
         FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileContact));
-        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
 
         BorderPane root = new BorderPane();
         root.setCenter(homeLoader.load());
-        root.setTop(langueLoader.load());
         root.setLeft(menuLoader.load());
 
         Scene scene = new Scene(root);
@@ -103,12 +96,10 @@ public class MenuController {
         Stage stage=(Stage) node.getScene().getWindow();
 
         FXMLLoader descriLoader = new FXMLLoader(getClass().getResource(fxmlFileDescr));
-        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
 
         BorderPane root = new BorderPane();
         root.setCenter(descriLoader.load());
-        root.setTop(langueLoader.load());
         root.setLeft(menuLoader.load());
 
         Scene scene = new Scene(root);
@@ -125,13 +116,11 @@ public class MenuController {
         Stage stage=(Stage) node.getScene().getWindow();
 
         FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileGallery));
-        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
 
         BorderPane root = new BorderPane();
-        root.setCenter((Node) homeLoader.load());
-        root.setTop((Node) langueLoader.load());
-        root.setLeft((Node) menuLoader.load());
+        root.setCenter(homeLoader.load());
+        root.setLeft(menuLoader.load());
 
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/styles.css");

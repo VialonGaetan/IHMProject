@@ -3,9 +3,9 @@
     {
       "srcImage": "images/produitsPhares/PF1.jpg",
       "labelTitleFr" : "Drone",
-      "labelDescriFr" : "To Be or To Have vous propose le dernier cri en matière de drone. A vous de créer vos propres panoramas aériens pour toute vos créations ou encore pour vous faire d'incroyables souvenirs de voyage.",
+      "labelDescriFr" : "To Be or To Have vous propose le dernier cri en matière de drone. A vous de créer vos propres panoramas aériens pour toutes vos créations ou encore pour vous faire d'incroyables souvenirs de voyage.",
       "labelTitleEn" : "Drone",
-      "labelDescriEn" : "To Be or To Have offers you the latest in drone. It's up to you to create your own aerial panoramas for all your creations or to make incredible travel memories"
+      "labelDescriEn" : "To Be or To Have offers you the latest in drone. It's up to you to create your own aerial panoramas for all your creations or to make incredible travel memories."
     },
     {
       "srcImage": "images/produitsPhares/PF2.jpg",
@@ -53,7 +53,7 @@
       "srcImage": "images/produitsPhares/PF9.jpg",
       "labelTitleFr" : "Manette ps4",
       "labelDescriFr" : "Les gamers ne sont pas en reste et trouveront leur bonheur avec les dernières consoles de jeux",
-      "labelTitleEn" : "ps4 controller",
+      "labelTitleEn" : "Ps4 controller",
       "labelDescriEn" : "Gamers are not left behind and will find their happiness with the latest game consoles"
     }]
 }

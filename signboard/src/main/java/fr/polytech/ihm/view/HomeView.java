@@ -19,7 +19,6 @@ public class  HomeView extends Application {
 
     private static final String fxmlFileHome = "/fxml/home.fxml";
     private static final String fxmlFileMenu = "/fxml/menu.fxml";
-    private static final String fxmlFileLanguage = "/fxml/language.fxml";
 
     @FXML
     private Image img;
@@ -36,10 +35,6 @@ public class  HomeView extends Application {
         BorderPane root = new BorderPane();
         FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlFileHome));
         root.setCenter(homeLoader.load());
-
-        FXMLLoader langueLoader = new FXMLLoader(getClass().getResource(fxmlFileLanguage));
-        root.setTop(langueLoader.load());
-
 
         FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(fxmlFileMenu));
         root.setLeft(menuLoader.load());

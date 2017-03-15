@@ -38,4 +38,25 @@ public class ProduitsPhares {
     public String getLabelDescriEn() {
         return labelDescriEn;
     }
+
+    public String getLabelDescri(String language) {
+        if(language.equals("french")){
+            return getLabelDescriFr();
+        }
+        if(language.equals("english")){
+            return getLabelDescriEn();
+        }
+        return getLabelDescriFr();
+    }
+
+    public String getLabelTitle(String language) {
+        if(language.equals("french")){
+            return getLabelTitleFr();
+        }
+        if(language.equals("english")){
+            return getLabelTitleEn();
+        }
+        return getLabelTitleFr();
+    }
+
 }
