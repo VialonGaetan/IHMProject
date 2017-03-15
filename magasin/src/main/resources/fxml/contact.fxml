@@ -15,9 +15,6 @@
       <HBox layoutX="268.0" layoutY="275.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="1150.0">
          <children>
             <ImageView fx:id="image" fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../autrelibrairie.jpg" />
-               </image>
             </ImageView>
             <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="1079.0">
                <children>
