@@ -20,7 +20,6 @@ public class Data {
     Data() throws FileNotFoundException{
         initShop();
     }
-
     private void initShop() throws FileNotFoundException
     {
         shops = new ArrayList<>();
