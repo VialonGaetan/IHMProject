@@ -3,6 +3,7 @@ package fr.polytech.ihm.model.shop;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
+import java.awt.*;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
@@ -14,19 +15,21 @@ public class Magasin {
     private String image;
     private List<String> produitsPhares;
     private String site;
-    private String emplacement;
     private String name;
+    private Point botRightPositionOnMap;
+    private Point topLeftPositionOnMap;
 
     public Magasin(){}
 
-    public Magasin(String name, String description, String imagePath, List<String> produitPhare, String site, String place, Categorie... type){
+    public Magasin(String name, String description, String imagePath, List<String> produitPhare, String site, Point topLeftPositionOnMap,Point botRightPositionOnMap, Categorie... type){
         this.categorie = Arrays.asList(type);
         this.name =name;
         this.description = description;
         this.image = imagePath;
         this.produitsPhares = produitPhare;
         this.site = site;
-        emplacement = place;
+        this.botRightPositionOnMap=botRightPositionOnMap;
+        this.topLeftPositionOnMap=topLeftPositionOnMap;
     }
 
 
@@ -50,12 +53,15 @@ public class Magasin {
         return site;
     }
 
-    public String getEmplacement() {
-        return emplacement;
-    }
-
     public String getName(){
         return name;
     }
 
+    public Point getBotRightPositionOnMap() {
+        return botRightPositionOnMap;
+    }
+
+    public Point getTopLeftPositionOnMap() {
+        return topLeftPositionOnMap;
+    }
 }

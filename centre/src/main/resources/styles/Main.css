@@ -51,3 +51,23 @@
     -fx-background-color:none;
     -fx-border:none;
 }
+
+.typeShopButton{
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: black;
+    -fx-border-color: darkgreen;
+    -fx-border-radius: 5px;
+}
+
+.typeShopButton:hover{
+    -fx-border-width: 5px;
+}
+
+.hyperlink {
+    -fx-text-fill: #428bca;
+}
+.hyperlink:hover,
+.hyperlink:focused {
+    -fx-text-fill: #2a6496;
+    -fx-underline: true;
+}

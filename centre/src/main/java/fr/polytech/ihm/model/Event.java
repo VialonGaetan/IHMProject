@@ -11,10 +11,10 @@ public class Event {
     private String name;
     private String description;
     private String image;
-    private Date startEvent;
-    private Date endEvent;
+    private String startEvent;
+    private String endEvent;
 
-    public Event(String name, String description, String image, Date startEvent, Date endEvent) {
+    public Event(String name, String description, String image, String startEvent, String endEvent) {
 
         this.name = name;
         this.description = description;
@@ -35,11 +35,11 @@ public class Event {
         return image;
     }
 
-    public Date getStartEvent() {
+    public String getStartEvent() {
         return startEvent;
     }
 
-    public Date getEndEvent() {
+    public String getEndEvent() {
         return endEvent;
     }
 }
