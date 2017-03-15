@@ -14,12 +14,12 @@
             <Image url="@../images/produitsPhares/PF1.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="84.0" layoutY="466.0" prefHeight="123.0" prefWidth="1028.0" text="To Be or To Have vous propose le dernier cri en matière de drone. A vous de créer vos propres panoramas aériens pour toute vos créations ou encore pour vous faire d'incroyables souvenirs de voyage." wrapText="true">
+      <Label fx:id="descriGallery" layoutX="84.0" layoutY="466.0" prefHeight="123.0" prefWidth="1028.0" wrapText="true">
          <font>
             <Font name="Calibri" size="23.0" />
          </font>
       </Label>
-      <Label layoutX="111.0" layoutY="438.0" prefHeight="28.0" prefWidth="150.0" text="Drone :">
+      <Label fx:id="titleGallery" layoutX="111.0" layoutY="438.0" prefHeight="28.0" prefWidth="300.0">
          <font>
             <Font name="Calibri Bold" size="23.0" />
          </font>

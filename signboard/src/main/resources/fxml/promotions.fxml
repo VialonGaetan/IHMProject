@@ -22,8 +22,8 @@
             <bottom>
                 <Pane prefHeight="128.0" prefWidth="1166.0" BorderPane.alignment="CENTER">
                     <children>
-                        <Button layoutX="966.0" layoutY="104.0" mnemonicParsing="false" onAction="#triPromotion" text="Tri par promotions" />
-                        <Button layoutX="872.0" layoutY="104.0" mnemonicParsing="false" onAction="#triPrix" text="Tri par prix" />
+                        <Button fx:id="buttonTriPromo" layoutX="900.0" layoutY="50.0" mnemonicParsing="false" onAction="#triPromotion" text="Tri par promotions" />
+                        <Button fx:id="buttonTriPrix" layoutX="700.0" layoutY="50.0" mnemonicParsing="false" onAction="#triPrix" text="Tri par prix" />
                         <Label layoutX="60.0" layoutY="53.0" text="Filtre :" />
                         <CheckBox fx:id="filtreLivres" layoutX="56.0" layoutY="94.0" mnemonicParsing="false" onAction="#filtreLivres" text="Livres" />
                         <CheckBox fx:id="filtreDvds" layoutX="153.0" layoutY="94.0" mnemonicParsing="false" onAction="#filtreDvds" text="Dvds" />
