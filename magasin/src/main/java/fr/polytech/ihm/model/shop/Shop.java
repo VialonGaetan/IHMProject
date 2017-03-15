@@ -3,6 +3,7 @@ package fr.polytech.ihm.model.shop;
 import fr.polytech.ihm.model.EnumDay;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 import java.awt.image.BufferedImage;
@@ -14,37 +15,29 @@ import java.util.*;
  */
 public class Shop
 {
-    private Adress adress;
-    private BufferedImage image;
-    private HashMap<EnumDay,int[]> schedules;
-    private Contact contact;
+    private String name;
+    private final String adress;
+    private String schedules;
+    private String mail;
+    private String phonenumber;
 
-    Shop(Adress adress, BufferedImage image,HashMap<EnumDay,int[]> schedules,Contact contact){
+
+    Shop(String name,String adress,String schedules,String mail,String phonenumber){
         this.adress      = adress;
-        this.image       = image;
         this.schedules   = schedules;
-        this.contact     = contact;
+        this.phonenumber = phonenumber;
+        this.mail        = mail;
+        this.name        = name;
     }
 
-    @FXML
-    private ImageView Viewimage;
 
-    @FXML
-    private ListView<?> Viewadress;
+    public String getAdress() { return adress;}
 
-    @FXML
-    private ListView<?> Viewschedules;
+    public String getSchedules() { return schedules; }
 
-    @FXML
-    private ListView<?> Viewcontact;
+    public String getMail() { return mail;}
 
-    @FXML
-    private void initialize(){
-    }
+    public String getPhonenumber() { return phonenumber;}
 
-    public Adress getAdress() { return adress;}
-
-    public HashMap<EnumDay,int[]> getSchedules() { return schedules; }
-
-    public Contact getContact() { return contact;}
+    public String getName() { return name; }
 }
