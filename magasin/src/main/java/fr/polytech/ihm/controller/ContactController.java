@@ -34,6 +34,6 @@ public class ContactController {
         tel.setText(shop.getPhonenumber());
         mail.setText(shop.getMail());
         web.setText("tobeortohave.com");
-        image.setImage(new Image("signboard/src/main/images/magasin.jpg"));
+        image.setImage(new Image("images/photos/magasin.jpg"));
     }
 }

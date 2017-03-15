@@ -13,7 +13,7 @@ public enum ViewEnum implements Language
     PRODUCT("/fxml/product_page.fxml", "Nos Produits", "Product"),
     COMMAND("/fxml/command_page.fxml", "Les Commandes", "Command"),
     OTHERMAG("/fxml/othermag_page.fxml", "Les autres magasins","Other stores"),
-    CONTACT("/fxml/contact_page.fxml", "Nous contacter","Contact us");
+    CONTACT("/fxml/contact.fxml", "Nous contacter","Contact us");
 
 
     private final String fxml;
