@@ -19,11 +19,6 @@
                   <Insets top="30.0" />
                </VBox.margin>
             </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="68.0" prefWidth="248.0" text="Nos Produits Phares">
-               <VBox.margin>
-                  <Insets top="30.0" />
-               </VBox.margin>
-            </Button>
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="68.0" prefWidth="201.0" text="Nos autres magazins">
                <VBox.margin>
                   <Insets top="30.0" />
