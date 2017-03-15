@@ -11,7 +11,9 @@ public enum ViewEnum implements Language
 {
     HOME("/fxml/home.fxml", "Acceuil", "Home"),
     PRODUCT("/fxml/product_page.fxml", "Nos Produits", "Product"),
-    COMMAND("/fxml/command_page.fxml", "Les Commandes", "Command");
+    COMMAND("/fxml/command_page.fxml", "Les Commandes", "Command"),
+    OTHERMAG("/fxml/othermag_page.fxml", "Les autres magasins","Other stores"),
+    CONTACT("/fxml/contact_page.fxml", "Nous contacter","Contact us");
 
 
     private final String fxml;

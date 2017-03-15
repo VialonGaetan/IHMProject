@@ -80,7 +80,6 @@ public class SalesController {
                 double prix1 = Double.valueOf(myObservableList.get(i).getNewPrice().substring(0,4));
                 double prix2 = Double.valueOf(myObservableList.get(i+1).getNewPrice().substring(0,4));
                 if(prix1 > prix2) {
-                    System.out.println("ici");
                     Item item = myObservableList.get(i);
                     myObservableList.remove(i);
                     myObservableList.add(i+1,item);
