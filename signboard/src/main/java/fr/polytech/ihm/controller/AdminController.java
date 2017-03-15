@@ -137,7 +137,7 @@ public class AdminController {
             root = new FXMLLoader(getClass().getResource("/fxml/popUp.fxml")).load();
             Stage stage = new Stage();
             stage.setTitle("Ajout produit");
-            stage.setScene(new Scene(root, 355, 320));
+            stage.setScene(new Scene(root, 350, 350));
             stage.show();
         }
         catch (IOException e) {

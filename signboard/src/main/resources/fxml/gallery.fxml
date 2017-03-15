@@ -27,8 +27,14 @@
             <Font name="Calibri Bold" size="23.0" />
          </font>
       </Label>
-      <Button fx:id="GalleryLeftButton" layoutX="116.0" layoutY="221.0" mnemonicParsing="false" onAction="#beforeImage" prefHeight="37.0" prefWidth="36.0" text="L" />
-      <Button fx:id="GalleryRightButton" layoutX="1029.0" layoutY="222.0" mnemonicParsing="false" onAction="#nextImage" prefHeight="37.0" prefWidth="36.0" text="R" />
+      <Button fx:id="GalleryLeftButton" layoutX="116.0" layoutY="221.0" mnemonicParsing="false" onAction="#beforeImage" prefHeight="37.0" prefWidth="36.0" text="L">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="GalleryRightButton" layoutX="1029.0" layoutY="222.0" mnemonicParsing="false" onAction="#nextImage" prefHeight="37.0" prefWidth="36.0" text="R">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <MenuButton fx:id="menuLanguage" alignment="CENTER" layoutX="1113.0" mnemonicParsing="false" popupSide="LEFT" prefHeight="32.0" prefWidth="52.0">
          <items>
             <MenuItem fx:id="french" mnemonicParsing="false" onAction="#changeLanguage">
