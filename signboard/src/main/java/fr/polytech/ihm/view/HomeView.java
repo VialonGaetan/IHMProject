@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class HomeView extends Application {
+public class  HomeView extends Application {
 
     private static final String fxmlFileHome = "/fxml/home.fxml";
     private static final String fxmlFileMenu = "/fxml/menu.fxml";
