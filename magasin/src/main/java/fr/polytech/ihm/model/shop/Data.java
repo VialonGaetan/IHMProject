@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class Data {
 
     private List<Shop> shops;
-    private static final Shop ourShop = new Shop("SophiaShop","400 avenue de sophia","Ouvert tout les jours de 8h00 à 21h","beorhavesophia@beorhave.com","0451245875");
+    public static final Shop ourShop = new Shop("SophiaShop","400 avenue de sophia","Ouvert tout les jours de 8h00 à 21h","beorhavesophia@beorhave.com","0451245875");
 
     Data() throws FileNotFoundException{
         initShop();

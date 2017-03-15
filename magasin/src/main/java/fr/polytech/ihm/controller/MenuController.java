@@ -16,7 +16,13 @@ public class MenuController implements Display
     private Button product;
 
     @FXML
+    private Button otherStore;
+
+    @FXML
     private Button command;
+
+    @FXML
+    private Button contact;
 
     @FXML
     void showCommand(ActionEvent event) throws IOException
@@ -34,5 +40,19 @@ public class MenuController implements Display
     void showProduct(ActionEvent event) throws IOException
     {
         display(ViewEnum.PRODUCT, product, LanguageEnum.FR);
+    }
+
+
+    @FXML
+    void showOtherStore(ActionEvent event)
+    {
+
+    }
+
+
+    @FXML
+    void showContact(ActionEvent event) throws IOException
+    {
+        display(ViewEnum.CONTACT, contact, LanguageEnum.FR);
     }
 }

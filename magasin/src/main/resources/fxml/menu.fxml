@@ -19,7 +19,7 @@
                   <Insets top="30.0" />
                </VBox.margin>
             </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="68.0" prefWidth="201.0" text="Nos autres magazins">
+            <Button fx:id="otherStore" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#showOtherStore" prefHeight="68.0" prefWidth="201.0" text="Nos autres magazins">
                <VBox.margin>
                   <Insets top="30.0" />
                </VBox.margin>
@@ -29,7 +29,7 @@
                   <Insets top="30.0" />
                </VBox.margin>
             </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="68.0" prefWidth="225.0" text="Nous contactez">
+            <Button fx:id="contact" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#showContact" prefHeight="68.0" prefWidth="225.0" text="Nous contactez">
                <VBox.margin>
                   <Insets top="30.0" />
                </VBox.margin>
