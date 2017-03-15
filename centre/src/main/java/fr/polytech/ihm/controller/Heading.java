@@ -10,13 +10,14 @@ import java.io.IOException;
  * @author Gaetan Vialon
  *         Created the 12/03/2017.
  */
-public class Heading {
+public abstract class Heading {
 
     @FXML
     protected Pane headingPane;
 
-    protected void setHeading() throws IOException {
-        Pane pane = (Pane) new FXMLLoader().load(getClass().getResourceAsStream("/fxml/heading.fxml"));
+
+    void setHeading() throws IOException {
+        Pane pane = new FXMLLoader().load(getClass().getResourceAsStream("/fxml/heading.fxml"));
         headingPane.getChildren().add(pane);
     }
 }

@@ -68,7 +68,6 @@ public class ShopController extends Menu {
     private void initialize() throws IOException {
         setMenu();
         defineButton();
-        //printShop(magasinObservableList);
     }
 
 
@@ -96,14 +95,6 @@ public class ShopController extends Menu {
         }
         printShop(shopList);
     }
-
-    /*
-    protected void display(List<Magasin> shoplist) throws IOException {
-        FXMLLoader loader = new FXMLLoader();
-        Pane pane = loader.load(getClass().getResourceAsStream("/fxml/shop.fxml"));
-        loader.<ShopController>getController().printShop(shoplist);
-    }
-    */
 
     protected void printShop(List<Magasin> shoplist) {
         Label title;

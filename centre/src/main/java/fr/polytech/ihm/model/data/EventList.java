@@ -5,6 +5,7 @@ import fr.polytech.ihm.model.Event;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.ResourceBundle;
 
@@ -21,14 +22,14 @@ public class EventList {
         eventlist.add(new Event(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("event1Name"),
                 ResourceBundle.getBundle("langues.langue", MainApp.language).getString("event1Description"),
                 "/images/Events/solde.jpg",
-                new Date(01/01/2017),
-                new Date(01/01/2017)));
+                "02/01/2017",
+                "12/02/2017"));
 
         eventlist.add(new Event(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("event2Name"),
                 ResourceBundle.getBundle("langues.langue", MainApp.language).getString("event2Description"),
                 "/images/Events/noel.jpg",
-                new Date(01/01/2017),
-                new Date(01/01/2017)));
+                "2016-12-15",
+                "2017-12-01"));
     }
 
     public ObservableList<Event> getEventlist() {

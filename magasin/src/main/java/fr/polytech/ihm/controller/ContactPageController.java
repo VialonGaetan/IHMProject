@@ -24,6 +24,5 @@ public class ContactPageController extends MenuBar{
 
     private void setPage() throws IOException{
         FXMLLoader loader = new FXMLLoader();
-        Pane pane = loader.load(getClass().getResourceAsStream("/fxml/contact.fxml"));
     }
 }
