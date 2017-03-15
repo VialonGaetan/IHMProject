@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -11,46 +12,53 @@
 <?import javafx.scene.layout.VBox?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.polytech.ihm.controller.HomeController">
-   <center>
-      <ImageView fitHeight="446.0" fitWidth="1039.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_CENTER">
-         <image>
-            <Image url="@/images/CentreCommercial.jpg" />
-         </image>
-         <BorderPane.margin>
-            <Insets top="60.0" />
-         </BorderPane.margin>
-      </ImageView>
-   </center>
-   <right>
-      <VBox alignment="CENTER" prefHeight="517.0" prefWidth="149.0" BorderPane.alignment="CENTER">
-         <children>
-            <HBox prefHeight="20.0" prefWidth="117.0">
-               <children>
-                  <TextField fx:id="searchText" />
-                  <Button fx:id="searchButton" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="Button" />
-               </children>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-            </HBox>
-            <ImageView fitHeight="464.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@/images/bannerRight.png" />
-               </image>
-               <VBox.margin>
-                  <Insets right="5.0" top="10.0" />
-               </VBox.margin>
-            </ImageView>
-         </children>
-      </VBox>
-   </right>
-   <left>
-      <Pane fx:id="menuPane" prefHeight="572.0" prefWidth="119.0" BorderPane.alignment="CENTER" />
-   </left>
-   <top>
-      <Pane fx:id="headingPane" prefHeight="146.0" prefWidth="1366.0" BorderPane.alignment="CENTER" />
-   </top>
+    <right>
+        <VBox alignment="CENTER" prefHeight="517.0" prefWidth="149.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="20.0" prefWidth="117.0">
+                    <children>
+                        <TextField fx:id="searchText" />
+                        <Button fx:id="searchButton" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="Button" />
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <ImageView fx:id="adsView" fitHeight="464.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/bannerRight.png" />
+                    </image>
+                    <VBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                    </VBox.margin>
+                </ImageView>
+            </children>
+        </VBox>
+    </right>
+    <left>
+        <Pane fx:id="menuPane" prefHeight="572.0" prefWidth="119.0" BorderPane.alignment="CENTER" />
+    </left>
+    <top>
+        <Pane fx:id="headingPane" prefHeight="146.0" prefWidth="1366.0" BorderPane.alignment="CENTER" />
+    </top>
+    <center>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="centerView" fitHeight="521.0" fitWidth="758.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/CentreCommercial.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="listShopCenterView" fitHeight="600.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+                    <Image url="@/images/ListCenter.png" />
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+                </ImageView>
+            </children>
+        </HBox>
+    </center>
 </BorderPane>

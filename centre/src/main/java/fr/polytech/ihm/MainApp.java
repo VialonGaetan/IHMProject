@@ -14,6 +14,7 @@ import java.util.Locale;
 public class MainApp extends Application {
 
     public static Locale language = Locale.ENGLISH;
+    public static String cssUse = "/styles/Main.css";
 
     private static final Logger log = LoggerFactory.getLogger(MainApp.class);
 
@@ -28,7 +29,7 @@ public class MainApp extends Application {
         Parent rootNode = (Parent) loader.load(getClass().getResourceAsStream(fxmlFile));
 
         Scene scene = new Scene(rootNode, 1366, 716);
-        scene.getStylesheets().add("/styles/Main.css");
+        scene.getStylesheets().add(cssUse);
         stage.setTitle("Cap Sophia");
         stage.setScene(scene);
         stage.show();

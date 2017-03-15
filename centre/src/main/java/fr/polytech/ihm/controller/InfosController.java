@@ -23,34 +23,26 @@ import java.util.ResourceBundle;
 public class InfosController extends Menu {
 
     @FXML
-    private Label latitudeLabel;
-
-    @FXML
-    private Label longitudeLabel;
-
-    @FXML
     private HBox infosHBOX;
 
     @FXML
     private GoogleMapView googleMapView;
-
-    private GoogleMap map;
 
 
     @FXML
     public void initialize() throws IOException {
         setMenu();
         setBotPane();
-        googleMapView.addMapInializedListener(() -> configureMap());
+        googleMapView.addMapInializedListener(this::configureMap);
     }
 
-    protected void configureMap() {
+    private void configureMap() {
         MapOptions mapOptions = new MapOptions();
 
         mapOptions.center(new LatLong(43.61556, 7.071918))
                 .mapType(MapTypeIdEnum.ROADMAP)
                 .zoom(15);
-        map = googleMapView.createMap(mapOptions, false);
+        GoogleMap map = googleMapView.createMap(mapOptions, false);
 
         MarkerOptions markerOptions = new MarkerOptions();
         LatLong markerLatLong = new LatLong(43.617849, 7.075260);
@@ -62,7 +54,7 @@ public class InfosController extends Menu {
         map.addMarker(myMarker);
     }
 
-    protected void setBotPane() {
+    private void setBotPane() {
         infosHBOX.getStyleClass().add("botPane");
         Separator separator = new Separator();
         separator.orientationProperty().setValue(Orientation.VERTICAL);

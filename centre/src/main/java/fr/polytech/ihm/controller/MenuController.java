@@ -19,7 +19,8 @@ import java.util.ResourceBundle;
  * @author Gaetan Vialon
  *         Created the 12/03/2017.
  */
-public class MenuController {
+
+public class MenuController extends Menu{
 
 
     @FXML
@@ -36,6 +37,9 @@ public class MenuController {
 
     @FXML
     private Button eventButton;
+
+    @FXML
+    private Button statsButton;
 
     @FXML
     private Button englishButton;
@@ -60,15 +64,21 @@ public class MenuController {
         if (event.getSource() == eventButton) {
             fxmlFile = "/fxml/Events.fxml";
         }
+        if (event.getSource() == statsButton) {
+            fxmlFile = "/fxml/Stats.fxml";
+        }
         changeView(fxmlFile);
     }
 
     @FXML
     private void changeLanguageButtonClick(ActionEvent event) throws IOException {
-        if (event.getSource() == frenchButton)
+        if (event.getSource() == frenchButton){
             MainApp.language = Locale.FRENCH;
-        else
+            setLanguage(Locale.FRENCH);
+        }
+        else{
             MainApp.language = Locale.ENGLISH;
+        }
         changeView("/fxml/MainPage.fxml");
     }
 
@@ -78,6 +88,7 @@ public class MenuController {
         shopButton.textProperty().setValue(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("shop"));
         infosButton.textProperty().setValue(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("info"));
         eventButton.textProperty().setValue(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("event"));
+        statsButton.textProperty().setValue(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("stat"));
     }
 
     private void changeView(String fxmlFile) throws IOException {
@@ -88,7 +99,7 @@ public class MenuController {
         if (fxmlFile.equals("/fxml/Shop.fxml"))
             ((ShopController) loader.getController()).printShop(new ShopList().getShopList());
         Scene scene = new Scene(rootNode);
-        scene.getStylesheets().add("/styles/Main.css");
+        scene.getStylesheets().add(MainApp.cssUse);
         stage.setScene(scene);
         stage.show();
     }
