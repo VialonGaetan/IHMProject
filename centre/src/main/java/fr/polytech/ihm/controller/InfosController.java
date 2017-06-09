@@ -56,8 +56,6 @@ public class InfosController extends Menu {
 
     private void setBotPane() {
         infosHBOX.getStyleClass().add("botPane");
-        Separator separator = new Separator();
-        separator.orientationProperty().setValue(Orientation.VERTICAL);
 
 
         Label title = new Label(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("follow"));
@@ -67,13 +65,22 @@ public class InfosController extends Menu {
                 new HBox(new ImageView("/images/Infos/facebook.png"), new Hyperlink(" Facebook CapSophia"))));
 
 
-        infosHBOX.getChildren().add(separator);
+        infosHBOX.getChildren().add(new Separator(Orientation.VERTICAL));
 
 
         title = new Label(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("open"));
         title.getStyleClass().add("title");
         infosHBOX.getChildren().add(new VBox(title,
                 new Label(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("schedule"))));
+
+        infosHBOX.getChildren().add(new Separator(Orientation.VERTICAL));
+
+        title = new Label(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("contact"));
+        title.getStyleClass().add("title");
+        infosHBOX.getChildren().add(new VBox(title,
+                new Hyperlink("contact@capsophia.com")));
+
+
         infosHBOX.alignmentProperty().setValue(Pos.CENTER);
     }
 

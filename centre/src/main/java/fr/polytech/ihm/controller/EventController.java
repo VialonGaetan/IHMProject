@@ -4,7 +4,9 @@ import fr.polytech.ihm.MainApp;
 import fr.polytech.ihm.model.Event;
 import fr.polytech.ihm.model.data.EventList;
 import javafx.fxml.FXML;
+import javafx.geometry.Orientation;
 import javafx.scene.control.Label;
+import javafx.scene.control.Separator;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -36,10 +38,12 @@ public class EventController extends Menu{
             title = new Label(event.getName());
             description = new Label(event.getDescription());
             title.getStyleClass().add("title");
-            listEventsVBox.getChildren().add(new HBox(new ImageView(event.getImage()),
+            listEventsVBox.getChildren().add(new HBox(
+                    new ImageView(event.getImage()),
                     new VBox(title,description,
                             new Label(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("startEvent") + event.getStartEvent().toString()),
-                            new Label(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("endEvent") + event.getEndEvent().toString()))));
+                            new Label(ResourceBundle.getBundle("langues.langue", MainApp.language).getString("endEvent") + event.getEndEvent().toString())),
+                    new Separator(Orientation.HORIZONTAL)));
         }
     }
 }
