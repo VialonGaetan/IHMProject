@@ -2,10 +2,22 @@ package fr.polytech.ihm.controller;
 
 import fr.polytech.ihm.model.Item;
 import fr.polytech.ihm.model.Magasin;
+import javafx.event.ActionEvent;
+import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.Window;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -116,5 +128,25 @@ public class AdminController {
             return false;
         }
         return false;
+    }
+
+    @FXML
+    public void addItem(Event evt){
+        Parent root;
+        try {
+            root = new FXMLLoader(getClass().getResource("/fxml/popUp.fxml")).load();
+            Stage stage = new Stage();
+            stage.setTitle("Ajout produit");
+            stage.setScene(new Scene(root, 350, 350));
+            stage.show();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void addMagasin(){
+
     }
 }

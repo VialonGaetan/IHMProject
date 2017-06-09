@@ -33,7 +33,9 @@
             <Button layoutX="731.0" layoutY="625.0" mnemonicParsing="false" onAction="#save" text="Sauvegarder la nouvelle version" />
             <Button layoutX="123.0" layoutY="85.0" mnemonicParsing="false" onAction="#changeItem" text="Modifier la liste d'articles" />
             <Button layoutX="294.0" layoutY="84.0" mnemonicParsing="false" onAction="#changeMagasins" text="Modifier la liste de boutiques" />
-            <Text fx:id="status" layoutX="934.0" layoutY="642.0" strokeType="OUTSIDE" strokeWidth="0.0"/>
+            <Text fx:id="status" layoutX="934.0" layoutY="642.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Button onAction="#addItem" layoutX="489.0" layoutY="84.0" mnemonicParsing="false" prefWidth="117.0" text="Ajouter un article" />
+            <Button onAction="#addMagasin" layoutX="631.0" layoutY="84.0" mnemonicParsing="false" text="Ajouter une boutique" />
          </children>
       </AnchorPane>
    </center>
